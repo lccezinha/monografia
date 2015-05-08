@@ -1,0 +1,345 @@
+%twoside frente e verso do contrário oneside
+\documentclass[msc, oneside]{ppgiathesis}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{bigstrut}
+\usepackage{float}
+%Referências no Formato ABNT:
+\usepackage[alf]{abntcite}
+\usepackage[latin1]{inputenc}
+\usepackage[Algoritmo]{algorithm}
+\usepackage{algorithmic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hifenizacao
+
+\hyphenation{co-nhe-ci-men-to tra-ba-lhan-do com-pos-to
+a-pli-ca-do}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Nome do Aluno
+\author{Nome do Autor Em Maiúsculas}
+
+% Titulo da dissertação
+\title{Título da Monografia em Maiúsculas}
+
+% Orientador
+\adviser{Nome do Orientador}
+
+% Co-Orientador (Retirar se não existir)
+\coadviser{Nome do Co-orientador}
+
+% Cidade
+\address{Joinville}
+
+% Data
+\date{Ano}
+
+% Área de Concentração
+\majorfield{Ciência da Computação}
+
+\begin{document}
+
+% Folha de Rosto
+\frontpage
+
+
+% Informações
+\informations{Último Nome}{Nome e
+sobrenomes}{Palavra-Chave1}{Palavra-Chave2}{Palavra-Chave3}
+
+% Dedicatória
+\begin{dedicatory}
+    Inserir a dedicatória (Alinhada a direita)
+\end{dedicatory}
+
+
+% Agradecimentos
+\acknowledgements
+
+Inserir os agradecimentos. Os agradecimentos devem ocupar no
+máximo uma página, devem ser justificados na largura da página e
+com um afastamento de parágrafo na primeira linha de 1,27 cm. O
+espaçamento entre linhas deve ser de 1,5 linhas. Não deve haver
+espaçamento adicional entre parágrafos.
+
+% Sumário (não alterar)
+\tableofcontents
+
+% Lista de Figuras (Retirar se não existir)
+\listoffigures
+
+% Lista de Tabelas (Retirar se não existir)
+\listoftables
+
+% Lista de Símbolos (Retirar se não existir)
+\listofsymbols
+
+% Lista de Abreviações (Retirar se não existir)
+\listofabreviations
+
+% Resumo
+\resumo
+
+% \noindent para não criar parágrafo (Retirar se existir parágrafo)
+\noindent Inserir o Resumo. O resumo deve conter no máximo 500
+palavras, devendo ser justificado na largura da página e escrito
+em um único parágrafo com um afastamento de na primeira linha de
+1,27 cm. O espaçamento entre linhas deve ser de 1,5 linhas. O
+resumo deve ser informativo, ou seja, é a condensação do conteúdo
+e expõe finalidades, metodologia, resultados e conclusões.
+\begin{keywords}
+    (máximo 4)
+\end{keywords}
+
+% Abstract
+\abstract
+
+% \noindent para não criar parágrafo (Retirar se existir parágrafo)
+\noindent Inserir o Abstract. O abstract é a versão do resumo para
+o inglês. Deve ser justificado na largura da página e escrito em
+um único parágrafo sem afastamento na primeira linha (como é o
+padrão em inglês). O espaçamento entre linhas deve ser de 1,5
+linhas. Aceita-se também, além do inglês, o Résumé (em francês) e
+o Zusammenfassung (em alemão).
+
+\begin{keywords}
+    (máximo 4)
+\end{keywords}
+
+% Não remover
+\mainmatter
+
+% Muda a posição e o algorísmo das páginas e reinicia o contador
+\changepage
+
+\chapter{Introdução}\label{cap_1}
+
+A introdução geral do documento pode ser apresentada através das
+seguintes seções: Desafio, Motivação, Proposta, Contribuição e
+Organização (do documento, especificando o que será tratado em
+cada um dos capítulos). O Capítulo \ref{cap_1} não contém
+subseções\footnote{Ver Capítulo \ref{cap_2} para comentários e
+exemplos de subseções.}. Este modelo foi proposto com o intuito de
+padronizar as monografias produzidas na
+Pós-Graduação do Centro Universitário Católica de Santa Catarina. Ele é inspirado nas normas da
+\abrevpuc{ABNT}{Associação Brasileira de Normas
+Técnicas}\cite{isk00}, mas não as segue ipsis litteris. Algumas
+alterações foram feitas com o objetivo de tornar o texto mais
+legível e apresentável para trabalhos na área de informática. Os
+principais itens a considerar na formatação deste documento são:
+
+\begin{itemize}
+\item O papel deve ter formato A4, com margens de 20 mm à direita
+e 30 mm nos demais lados. Não devem ser usados cabeçalhos ou
+rodapés além dos que estão aqui propostos. \item O texto principal
+do documento deve estar escrito em Times Roman 12 pontos. \item
+Código, listagens e textos similares devem ser formatados em fonte
+Courier 12 ou 10 pontos. \item O espaçamento entre linhas deve ser
+sempre 1.5. Não inserir espaços adicionais entre parágrafos
+normais. Figuras, tabelas, listagens e listas de itens devem ter
+um espaço adicional antes e após os mesmos. \item Se possível, o
+documento deve ser impresso em frente/verso, tomando cuidado para
+que todas as páginas iniciais (capas, sumários, listas, resumo,
+etc) e as páginas de início de capítulo estejam sempre do lado
+direito da leitura. \item A numeração das páginas deve usar
+algarismos romanos minúsculos (i, ii, iii, ...) para as seções
+iniciais (resumo, sumário, listas), situada no pé da página e
+centralizada. \item A numeração das páginas deve usar algarismos
+arábicos (1, 2, 3, ...) a partir da introdução, até o final do
+documento. Os números de página devem estar situados no alto à
+direita (páginas direitas) ou à esquerda (páginas esquerdas).
+\item Expressões em inglês, grego, latim ou outras línguas devem
+ser grifadas em itálico, como \textit{sui generis ou scheduling}.
+\item Para enfatizar algo, deve-se usar somente negrito.
+\textbf{Sublinhado ou maiúsculas não devem ser usados como forma
+de ênfase !} \item As notas de rodapé também têm um
+modelo\footnote{As notas de rodapé dever ser escritas em Times
+Roman 10 pt, numeradas em arábico.}.
+\end{itemize}
+
+Ao elaborar todo o texto da dissertação ou da tese, o mais
+indicado é o uso do verbo na forma impessoal. Exemplos:
+
+\begin{itemize}
+\item ... utilizaram-se os seguintes dados ... \item ...
+elaborou-se de forma precisa ... \item ... trata-se os algoritmos
+... \item ... foram obtidos resultados significativos ...
+\end{itemize}
+
+Além disso, deve-se a todo custo evitar a ``linguagem  de
+revista'', com expressões como ``sensacional'', ``impressionante',
+``monstruoso'', etc (por exemplo: ``Os resultados obtidos são
+sensacionais, sobretudo considerando a monstruosa margem de
+erro.'').
+
+Este modelo contém exemplos para os padrões de inserção de
+figuras, tabelas, listas de itens, bibliografia, etc. Em caso de
+dúvidas ou discordância, Pode-se entrar em contato com a direção
+ou secretaria do programa. Obviamente, críticas (construtivas) e
+sugestões são muito bem-vindas.
+
+\section{Desafio}
+
+Texto desta Seção. Texto desta Seção. Texto desta Seção. Texto
+desta Seção. Texto desta Seção. Texto desta Seção. Texto desta
+Seção.
+
+Texto texto texto texto texto texto texto texto texto texto texto
+texto texto texto texto texto texto texto texto texto texto texto
+texto texto texto texto texto texto texto texto texto texto texto
+texto texto texto texto.
+
+Exemplo de Figura \ref{fig_1} (deve-se deixar um espaço antes e um
+após a figura):
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=naotente.eps}
+    \caption{Não tente fazer isto em casa}
+    \label{fig_1}
+  \end{center}
+\end{figure}
+
+Exemplos de Tabela (espaços idem):
+
+\begin{center}
+  \begin{table}[htb!]
+    \caption{Exemplo de Tabelas}
+    \begin{tabular}{|l|p{3in}|p{2.3in}|}
+      \hline
+      \textbf{Item1} & \textbf{Item2} & \textbf{Item3} \\
+      \hline
+        A & Aaaaaaaaaaaa & Aaaaaaaaaaaa Aaaaaaaaaaaa Aaaaaaaaaaaa Aaaaaaaaaaaa Aaaaaaaaaaaa Aaaaaaaaaaaa \\
+      \hline
+    B & Bbbbbbb & Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb Bbbbbb \\
+      \hline
+    \end{tabular}
+    \label{tab_smtp_comand}
+  \end{table}
+\end{center}
+
+Exemplo de Equações:
+
+\begin{equation}
+  H(P_1,P_n)=H(Q_1,Q_2)+Q_1H(\frac{P_1}{Q_1},\frac{P_M}{Q_1})+Q_2H(\frac{P_{M+1}}{Q_2},\frac{4}{\frac{P_N}{Q_2}})
+\end{equation}
+
+
+Exemplo de símbolos podem ser dados, como neste caso, o
+\symb{\pi}{Este é o símbolo do PI} foi inserido na lista de
+símbolos.
+
+\chapter{Título do Capítulo (Times Roman 20 pt negrito)}\label{cap_2}
+
+Inserir o texto do capítulo. A partir do Capítulo \ref{cap_2}
+inicia-se o desenvolvimento do texto propriamente dito. Os
+Capítulos que compõem o desenvolvimento do trabalho (exceto a
+Conclusão) podem ser divididos em tantas seções e subseções
+quantas forem necessárias. As descrições apresentadas devem ser
+suficientes para permitir a compreensão da pesquisa realizada.
+
+A introdução de cada capítulo deve conter um resumo do assunto
+tratado no mesmo e uma visão de sua estrutura geral. Deve ser
+ressaltada a importância do tema tratado no capítulo para o
+trabalho.
+
+\section{Seção (Times Roman 14 pt negrito)}
+
+Texto desta Seção. Texto desta Seção. Texto desta Seção. Texto
+desta Seção. Texto desta Seção. Texto desta Seção. Texto desta
+Seção.
+
+\subsection{Subseção (Time Roman 12 pt negrito)}
+
+Para melhorar a legibilidade do texto, deve ser extremamente
+evitado o uso de subdivisões mais profundas que a subseção (por
+exemplo, subsubseções). Se elas forem absolutamente necessárias,
+não devem ser numeradas. Deve-se analisar a possibilidade de uso
+de uma lista de itens em seu lugar. O número de níveis de texto do
+documento não deve exceder três:
+
+capítulo, seção e subseção. O uso de mais que três níveis
+dificulta a leitura e prejudica muito a estética do texto.
+
+\section{Conclusão}
+
+Todo capítulo (com exceção da introdução e da conclusão) deve
+encerrar com uma pequena conclusão local, resumindo os tópicos
+apresentados no capítulo e preparando o leitor para o próximo
+capítulo (exceto se esse for a conclusão geral). Caso o capítulo
+tenha apresentado resultados obtidos pelo próprio autor, estes
+devem ser sucintamente relembrados aqui.
+
+\chapter{Conclusão}
+
+Inserir o texto da Conclusão. Neste capítulo devem ser
+apresentadas, clara e ordenadamente, as conclusões obtidas com
+base nos experimentos realizados e nos resultados. Dados
+quantitativos não devem aparecer na conclusão, nem tampouco
+resultados comprometedores e passíveis de discussão.
+
+Normalmente este capítulo não deve conter seções ou sub-seções.
+
+\chapter{Sobre as Referências no padrão ABNT}
+
+Para utilizar o pacote abnt-alf é necessário instalar o
+Abntex\footnote{Disponível em: http://abntex.codigolivre.org.br/}
+e estudar como utilizá-lo, visto que ele adota o padrão um pouco
+diferente para alguns campos dos arquivos .bib convencionais e
+inclui alguns novos para poder atender as normas.
+
+Alguns exemplos:
+
+\begin{itemize}
+
+\item Citação de Artigo: \cite{Pachet:2003};
+
+\item Citação de Artigo publicado em Congresso:
+\cite{Fingerhut:1999};
+
+\item Citação de Livro: \cite{Kuncheva:2004};
+
+\item Citação de Fonte on-line: \cite{Lyman:2003};
+
+\end{itemize}
+
+%Referencias:
+\bibliographystyle{abnt-alf}
+\bibliography{exemplo}
+
+\appendix
+
+\chapter{Título do Apêndice}
+
+Os apêndices são uma extensão do texto, destacados deste para
+evitar descontinuidade na sequência lógica ou alongamento
+excessivo de determinado assunto ou tópico dentro dos capítulos da
+dissertação ou da tese. São contribuições que servem para
+esclarecer, complementar, provar ou confirmar as idéias
+apresentadas no texto dos capítulos e que são importantes para a
+compreensão dos mesmos. Todos os apêndices devem vir após as
+referências bibliográficas, e devem ser enumerados por letras
+maiúsculas (A, B, C, ...).
+
+\section{Seção}
+
+Texto desta Seção. Texto desta Seção. Texto desta Seção. Texto
+desta Seção. Texto desta Seção. Texto desta Seção. Texto desta
+Seção. Texto texto texto texto texto texto texto texto texto texto
+texto texto texto texto texto texto texto texto texto texto texto
+texto texto texto texto texto texto texto texto texto texto texto
+texto texto texto texto texto.
+
+\subsection{Sub-Seção}
+
+Texto desta Sub-Seção. Texto desta Sub-Seção. Texto desta
+Sub-Seção. Texto desta Sub-Seção. Texto desta Sub-Seção.
+
+
+\end{document}
