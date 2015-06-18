@@ -164,7 +164,7 @@ dentro do processo de desenvolvimento \cite{Beck}. O manifesto Ágil possui valor
   Ou seja, mesmo havendo valor nos itens a direita, valorizamos mais os itens a esquerda. \cite{ManifestoAgil}
 \end{itemize}
 
-Além dos valores, o Manifesto Ágil se baseia em alguns princípios \cite{Beck}:
+Além dos valores, o Manifesto Ágil se baseia em alguns princípios:
 
 \begin{itemize}
   \item Satisfazer o cliente por meio de entregas adiantadas e contínuas do \textit{software};
@@ -191,7 +191,7 @@ liberando pequenas versões à medida que as mesmas ficam prontas, trazem o
 cliente para dentro do processo de desenvolvimento fazendo o mesmo participar e
 acompanhar o crescimento do projeto, enfatiza interação entre pessoas sejam elas
 do time de desenvolvimento ou pessoas que entendem do negócio e abraçam
-mudanças no software a qualquer momento \cite{Fowler}.
+mudanças no software a qualquer momento \cite{Fowler} \cite{Beck}.
 
 \section{Scrum}
 
@@ -233,7 +233,7 @@ e o \textit{Product Owner}. Embora existam essas três separações, toda equipe é 
 e responsabilizada pelo resultados obtidos, isso faz com que todos se comprometam com o projeto inteiramente.
 
 Todos os membros juntos, formam o chamado Time do Scrum, todos visam trabalhar juntos, de forma colaborativa,
-para que como equipe todos consigam alcançar um único objetivo coletivo. \cite{LivroScrumCasaDoCodigo}
+para que como equipe todos consigam alcançar um único objetivo coletivo.
 
 \subsubsection{Time de desenvolvimento}
 
@@ -243,7 +243,8 @@ Dentro do time não há divisões entre programadores, \textit{designers}, engenhei
 todos trabalham juntos de forma igualmente responável, com objetivo de
 entregar o que foi prometido para a \textit{sprint}. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
 
-O time possui várias atividades e tarefas dentro da \textit{sprint}:
+O time possui várias atividades e tarefas dentro da \textit{sprint}
+\cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}:
 
 \begin{itemize}
   \item Planejar seu trabalho, junto ao \textit{Product Owner} e posteriomente dividir as tarefas entre a equipe;
@@ -271,9 +272,50 @@ O \textit{Scrum Master} é o responsável por garantir o funcionamento e execução 
 decorrer de uma \textit{sprint}.Possui além de conhecimentos técnicos, habilidade de gerenciar pessoas, técnicas para facilitar o trabalho e está sempre tentando remover qualquer bloqueio que possa impedir o time de desenvolvimento. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
 
 \subsection{Artefatos do Scrum}
+
+Os artefatos do \textit{Scrum} servem como ferramentas de opoio a todo o time, afim de que todos
+possam ter um acompanhamento geral dos trabalho durante a \textit{sprint} e uma visão geral
+do andamento do produto que está sendo feito.
+
 \subsubsection{Product Backlog}
+
+É lista de funcionalidades desejadas para o produto que está sendo desenvolvido. É responsabilidade
+do \textit{Produto Owner} adicionar, remover, priorizar todas as tarefas dentro do \textit{Product Backlog}.
+Necessariamente não contêm somente novas funcionalidades, podem também conter melhorias, correções de falhas,
+questões técnicas, ou seja, tudo que for necessário e possa vir a ser desenvolvido para entregar o produto.
+
+Incialmente não precisa conter todas as tarefas, pode conter somente aquelas necessárias para iniciar o desenvolimento do produto e a medida que o time e o cliente aprendem mais sobre o produto, novas
+tarefas serem adicionadas. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
+
 \subsubsection{Sprint Backlog}
-\subsubsection{Definição de Pronto}
+
+É lista de funcionalidades extraídas de dentro do \textit{Product Backlog} que serão desenvolvidas durante
+uma \textit{sprint} pelo time de desenvolvimento. Os itens são extraídos de acordo com a priorização do
+\textit{Product Owner} e a equipe tem a liberadade de escolher os itens que são inclusos na \textit{sprint}
+de acordo com a sua percepção do tempo que cada item levará para ficar pronto.
+
+O desempenho do time pode ser medido, baseando-se na quantidade de itens que foram entregues
+entre um dia  outro da \textit{sprint}. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
+
+\subsubsection{Quadro de Tarefas}
+
+Para tornar mais fácil e visual o acompanhamento das tarefas dentro da \textit{sprint}, é
+um costume equipes usarem um quadro de tarefas, que geralmente é quebrado de acordo com a situação
+de cada tarefa dentro da \textit{sprint}.
+
+Geralmente esse quadro possui as seguintes situações: Pendente, Andamento, Finalizado. Um exemplo desse
+quadro pode ser visto na Figura \ref{figura_2} abaixo:
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/quadro-tarefas.png}
+    \caption{Quadro de tarefas de uma equipe ágil}
+    \label{figura_2}
+    \cite{BlogCaelum}
+  \end{center}
+\end{figure}
+
+\subsubsection{Gráficos de acompanhamento}
 
 \subsection{Eventos do Scrum}
 \subsubsection{Sprint}
