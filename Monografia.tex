@@ -25,7 +25,7 @@ a-pli-ca-do}
 \author{Luiz Cezer Marrone Filho}
 
 % Titulo da dissertação
-\title{Scrum Distribuído - Práticas Ágeis para equipes distribuídas}
+\title{Behavior Driven Development}
 
 % Orientador
 \adviser{Maurício Henning}
@@ -46,7 +46,7 @@ a-pli-ca-do}
 
 % Informações
 \informations{Filho}{Luiz Cezer Marrone}
-{Desenvolvimento de Software}{Equipes distribuídas}{Scrum}
+{Desenvolvimento de Software}{Teste de Software}{BDD}
 
 % Sumário (não alterar)
 \tableofcontents
@@ -68,22 +68,22 @@ a-pli-ca-do}
 \resumo
 
 % \noindent para não criar parágrafo (Retirar se existir parágrafo)
-\noindent O tema deste trabalho é expor a forma como equipes de desenvolvimento de software
-geograficamente distribuídas podem usufruir de métodos ágeis, como por exemplo o \textit{Scrum}, abordando quais
-seus pontos fortes e desafios a serem superados.
-\begin{keywords}
-  Desenvolvimento de Software, Equipes distribuídas, Métodos Ágeis, Scrum
-\end{keywords}
+% \noindent O tema deste trabalho é expor a forma como equipes de desenvolvimento de software
+% geograficamente distribuídas podem usufruir de métodos ágeis, como por exemplo o \textit{Scrum}, abordando quais
+% seus pontos fortes e desafios a serem superados.
+% \begin{keywords}
+%   Desenvolvimento de Software, Teste de Software, BDD, TDD
+% \end{keywords}
 
 % Abstract
 \abstract
 
 % \noindent para não criar parágrafo (Retirar se existir parágrafo)
-\noindent The purpose of this coursework is to expose the way that remote
-development teams can use agile methods, like \textit{Scrum}, with focus in advantages, challenges to overcome.
-\begin{keywords}
-    Software Development, Distributed teams, Agile, Scrum
-\end{keywords}
+% \noindent The purpose of this coursework is to expose the way that remote
+% development teams can use agile methods, like \textit{Scrum}, with focus in advantages, challenges to overcome.
+% \begin{keywords}
+%     Software Development, Distributed teams, Agile, Scrum
+% \end{keywords}
 
 % Não remover
 \mainmatter
@@ -93,48 +93,31 @@ development teams can use agile methods, like \textit{Scrum}, with focus in adva
 
 \chapter{Introdução}\label{cap_1}
 
-Nos dias atuais, empresas de desenvolvimento de software precisam de cada vez mais
-agilidade na hora de desenvolver e entregar seus projetos.
-Além de agilidade é preciso garantir consistência e um ritmo sustentável de trabalho, sem deixar de lado o cliente,
-garantindo a ele entregas periódicas do projeto, tudo isso sem esquecer da garantia de qualidade do que foi e está sendo entregue e que os requisitos podem mudar a qualquer momento. Para isso, empresas fazem o uso de métodos ágeis de gestão, afim de entregar software de forma incremental,
-mais rapidamente e com uma acertividade maior \cite{ManifestoAgil}.
-
-Um exemplo desses métodos ágeis de gestão é o \textit{Scrum}. O \textit{Scrum} é um \textit{framework} de gerenciamento de projetos, que possibilita um desenvolvimento iterativo e incremental do projeto, visando uma maior comunicação entre todos os envolvidos no projeto \cite{DesenvolvimentoAgil:Scrum}.
-
-Para que empresas possam evoluir e responder as demandas do mercado, precisam de cada vez mais profissionais melhores e mais capacitados, porém nem sempre é possível obter esses recursos humanos no local onde a empresa se encontra fisicamente, além disso o custo de manutenção de escritório, deslocamento dos funcionários e outros fatores podem atrapalhar na decisão de expandir a equipe com novos funcionários.
-
-Na tentativa de reduzir esses impactos e ainda sim conseguir expadir a equipe, muitas empresas adotam a contratação de funcionários para trabalho remoto, o que faz com que a equipe se torne distribuida em partes ou em sua totalidade \cite{BrasilEconomia} \cite{DDS:JorgeRafael}.
-
-Porém mesmo que uma equipe seja parcialmente ou totalmente remota, ela ainda precisa ser organizada, comunicativa e focada na entrega, e o \textit{Scrum} é uma das metodologias que podem ajudar equipes que trabalham nesse modelo.
-
-Este trabalho tem como objetivo apresentar o \textit{Scrum} voltado a equipes remotas, descrevendo suas práticas, diferenças encontradas entre equipes presenciais e remotas, quais ferramentas e práticas ser adotas para minimizar esse problemas.
+??
 
 \section{Objetivo Geral}
 
-Realizar um estudo sobre as principais práticas, desafios, problemas e ferramentas utilizadas por equipes
-remotas que utilizam a metodologia \textit{Scrum}.
+Apresentar por meio de um estudo experimental as vantagens do desenvolvimento de \textit{software} utilizando
+a abordagem do BDD.
 
 \section{Objetivos Específicos}
 
 \begin{enumerate}
-  \item contextualizar por meio de referencial teórico sobre métodos ágeis e \textit{Scrum};
-  \item identificar quais melhores práticas se aplicam em equipes remotas;
-  \item identificar quais as dificuldades equipes remotas enfrentam com mais frequência;
-  \item propor melhores alternativas para facilitar o trabalho da equipe;
-  \item propor ferramentas de apoio;
-  \item coletar de dados com profissionais da área sobre práticas de equipes remotas.
+  \item Contextualizar por meio de referencial teórico sobre métodos ágeis, \textit{Scrum}, XP, testes e qualidade do \textit{software};
+  \item Contextualizar por meio de referencial teórico as práticas e como desenvolver \textit{software} utilizando abordagem do TDD e do BDD;
+  \item Desenvolver um exemplo prático utilizando BDD para demonstrar como essa abordagem auxília no
+  desenvolvimento de \textit{software};
 \end{enumerate}
 
 \section{Justificativa do trabalho}
 
-Com muitas empresas T.I. hoje aderindo a forma de contração de funcionários remotos, é preciso
-garantir que a equipe, seja ela em sua totalidade ou parcialidade remota, consiga trabalhar de modo
-ágil, sustentável, sempre focado na entrega e ainda sim mantendo a sua organização e colaboração ativa.
-Para isso as empresas podem adotar \textit{Scrum} como metologia ágil afim de organizar melhor a equipe e focar nos seus resultados.
+??
 
 \chapter{Referencial Teórico}\label{cap_2}
 
 Neste capítulo serão apresentados os principais conceitos que serão abordados durante o trabalho.
+
+\section{Desenvolvimento de Software sem testes}
 
 \section{Metodologias Ágeis}
 
@@ -236,11 +219,6 @@ a equipe deve tomar no ambiente de trabalho e como se deve ocorrer o processo de
   todas as possíveis falhas do desenvolvimento por meio dos testes. Dessa forma, quando um código é terminado
   não é preciso voltar até ele para testá-lo, pois ele já estará testado e pronto.
 \end{itemize}
-
-% \section{Lean Development}
-% \section{Feature-Driven Development (FDD)}
-% \section{RUP}
-% \section{OpenUP}
 
 \section{Scrum}
 
@@ -509,46 +487,10 @@ citados por \cite{Pressman}. Esses fatores podem ser agrupados e representados c
   \end{center}
 \end{figure}
 
-\section{Desenvolvimento Distribuído de Software}
-
-Hoje em dia a área de desenvolvimento de \textit{Software} tem evoluído de forma cada vez mais rápida,
-não só a área de desenvolvimento, mas também as empresas precisam desenvolver \textit{software} cada
-vez mais rápido e de maior qualidade. \cite{DDS:JorgeRafael}
-
-Paralelo a isso é possível notar um grande avanço em direção a globalização dos negócios e o \textit{software}
-tem se tornado cada vez mais importante como componente de negócio. Com esse avanço, mercados que antes eram nacionais facilmente podem tornar-se multinacionais e para empresas que queiram acompanhar esse ritmo
-de crescimento fica cada vez mais trabalhoso, custoso e complexo desenvolver \textit{software}
-no mesmo local físico ou empresa. Aliado ao avanço dos meios de comunicação e aumento dos custos para manter funcionários, empresas tem sido inventivadas a investir no Desenvolvimento Distribuído de \textit{Software} formando equipe parcialmente um completamente distribuídas. \cite{DDS:JorgeRafael} \cite{BrasilEconomia}
-
-Segundo \cite{DDS:JorgeRafael}, a distribuição do processo de desenvolvimento de \textit{software} faz ampliar
-os problemas relacionados ao desenvolvimento tradicional e gera novos desafios como a distância,
-falta ou problemas de comunicação entre a equipe e diferenças culturais.
-
-Segundo \cite{FatoresAfetamDDS} entre os problemas é possível citar:
-
-\begin{itemize}
-  \item Distância socio-cultural;
-  \item Motivação;
-  \item Distância geográfica e temporal;
-  \item Complexidade e tamanho do projeto;
-  \item Comunicação;
-  \item Ambientes e Ferramentas de Desenvolvimento;
-  \item Metodologia;
-\end{itemize}
-
-Porém a abordagem de DDS também poderá trazer vantagens, que segundo \cite{DDS:Rafael} são:
-
-\begin{itemize}
-  \item Possibilidade de desenvolvimento contínuo, permitindo um aumento de produtividade e a redução
-  dos prazos de entrega;
-  \item Disponibilidade de recursos globais com baixos custos e a qualquer hora;
-  \item Disponibilidade de recursos qualificados em áreas especializadas;
-  \item Oportunidade de realizar o desenvolvimento do produto próximo ao cliente;
-  \item Possibilidade de formar equipes virtuais.
-\end{itemize}
-
-% \subsection{Problemas relacionados ao DDS}
-% \subsection{Problemas relacionados ao DDS}
+% \section{Teste de Software}
+% \section{TDD}
+% \section{BDD}
+% \section{Linguagem Ruby}
 
 %Referencias:
 \bibliographystyle{abnt-alf}
