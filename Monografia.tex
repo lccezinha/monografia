@@ -503,7 +503,56 @@ citados por \cite{Pressman}. Esses fatores podem ser agrupados e representados c
   \end{center}
 \end{figure}
 
-% \section{Teste de Software}
+\section{Testes de Software}
+
+A evolução tecnologica vivenciada por nós nos dias atuais no traz uma comodidade muito grande, o uso de \textit{notebooks} e \textit{smartphones} facilita cada vez mais as atividades e nossa comunicação. Meios de transporte
+como carros e aviões também estão cada vez mais dependentes de tecnologia e \textit{softwares} para facilitar a atividade e trazer uma maior segurança, além desses, sistemas bancários e telefônicos possuem grandes \textit{softwares} e necessitam estar sempre em funcionamento.
+
+O lado negativo de todo esse avanço, é que nos torna refens da tecnologia e uma falha gerada por algum desses dispositivos pode ser catastrófica e trazer grandes prejuízos financeiros.
+
+Ao longo dos anos a industria de \textit{software} acumula algumas grandes falhas, citadas por \cite{FalhasDeSoftware:PedroCosta} e \cite{FalhasDeSoftware:ProfissionaisTI} :
+
+\begin{itemize}
+  \item \textbf{Apagão nos EUA:} Um incidente causado por uma falha no sistema de alarmes deixou mais de 50 milhões de pessoas sem luz e causou 11 mortes.
+  \item \textbf{Recall da Honda:} uma falha de programação no sistema de \textit{airbag} dos carros, fez com que a \textit{Honda}, fosse forçada a fazer um \textit{recall} de mais de 2 milhões de automóveis e custou milhões a empresa japonesa;
+  \item \textbf{Radiação em excesso:} Entre os anos de 1985 e 1987, hospitais dos EUA utlizavam um aparelho chamado \textit{Therac-25} para o tratamento com radicação contra o câncer, um erro de programação no \textit{software} fazia com que a máquina aplicasse uma dosagem até 100 vezes maior do que a indicada para os pacientes, foram registradas 6 mortes por conta dessa falha;
+  \item \textbf{Foguete Mariner:} uma fórmula matemática falha introduzida por uma programador fez com que o foguete fosse para fora do seu curso, causando um prejuízo de 18 milhões de dólares;
+  \item \textbf{Míssil na guerra do Golfo:} durante a guerra, um sistema de mísseis americanos falhou na interceptação de um míssil inimigo e o acampamento dos soldados foi destruído causando 28 mortes;
+\end{itemize}
+
+Essas falhas colocam como cada vez mais prioritária a necessidade de se garantir a qualidade e funcionamento do \textit{softwares} através de testes bem feitos, melhor elaborados e mais precisos.
+
+Teste de \textit{software} pode ser definido como um processo de execução de um produto, para determinar se o mesmo atingiu suas necessidades e se seu funcionamento ocorreu de forma correta e segura. O maior objetivo do processo de testes é detectar falhas e previni-lás ainda durante o desenvolvimento, para evitar
+que essas falhas sejam descobertas por usuários e não causem danos e nem prejuízos. \cite{Pressman}
+
+Segundo \cite{Pressman} de testes de \textit{software} devem abordar todos os níveis do projeto e podem ser
+classificados como:
+
+\begin{itemize}
+  \item \textbf{Testes de Unidade:} Focam em testar cada pequeno componente do sistema, garantindo sua funcionalidade e também garatem que cada pequeno componente consiga funcionar de forma isoloada;
+  \item \textbf{Teste de Integração:} Visa testar o fluxo do sistema como um tudo e garantir que todas
+  as interações funcionem entre si;
+  \item \textbf{Teste de Validação:} Visa testar se os requisitos estão funcionando da mesma forma no \textit{software} de como foram levantados na análise;
+  \item \textbf{Teste de Sistema:} Foca em testar a combinação do \textit{software} com outros elementos de \textit{hardware}, banco de dados e usuários reais. Também visa garantir que o projeto atendeu a necessidade
+  para o qual ele foi criado.
+\end{itemize}
+
+\cite{Pressman} ainda sugere que os teste  podem ser vistos em forma de espiral conforme
+a Figura \ref{figura_5}, partindo da menor unidade do \textit{software} até sua integração total e seu uso.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/espiral-teste-de-software.jpg}
+    \caption{O espiral dos testes de \textit{software}}
+    \label{figura_5}
+    \cite{Pressman}
+  \end{center}
+\end{figure}
+
+Dessa forma é possível notar que a atividade de testar \textit{software} deve se tornar cada vez mais importante
+nos projetos, para garantir não só sua qualidade, mas também eliminar riscos de falhas do projeto e garatir
+a satisfação do cliente.
+
 % \section{TDD}
 % \section{BDD}
 % \section{Linguagem Ruby}
