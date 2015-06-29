@@ -505,15 +505,15 @@ citados por \cite{Pressman}. Esses fatores podem ser agrupados e representados c
 
 \section{Testes de Software}
 
-A evolução tecnologica vivenciada por nós nos dias atuais no traz uma comodidade muito grande, o uso de \textit{notebooks} e \textit{smartphones} facilita cada vez mais as atividades e nossa comunicação. Meios de transporte
+A evolução tecnologica vivenciada por nós nos dias atuais nos traz uma comodidade muito grande, o uso de \textit{notebooks} e \textit{smartphones} facilita cada vez mais as atividades e nossa comunicação. Meios de transporte
 como carros e aviões também estão cada vez mais dependentes de tecnologia e \textit{softwares} para facilitar a atividade e trazer uma maior segurança, além desses, sistemas bancários e telefônicos possuem grandes \textit{softwares} e necessitam estar sempre em funcionamento.
 
 O lado negativo de todo esse avanço, é que nos torna refens da tecnologia e uma falha gerada por algum desses dispositivos pode ser catastrófica e trazer grandes prejuízos financeiros.
 
-Ao longo dos anos a industria de \textit{software} acumula algumas grandes falhas, citadas por \cite{FalhasDeSoftware:PedroCosta} e \cite{FalhasDeSoftware:ProfissionaisTI} :
+Ao longo dos anos a indústria de \textit{software} acumula algumas grandes falhas, citadas por \cite{FalhasDeSoftware:PedroCosta} e \cite{FalhasDeSoftware:ProfissionaisTI} :
 
 \begin{itemize}
-  \item \textbf{Apagão nos EUA:} Um incidente causado por uma falha no sistema de alarmes deixou mais de 50 milhões de pessoas sem luz e causou 11 mortes.
+  \item \textbf{Apagão nos EUA:} Um incidente causado por uma falha no sistema de alarmes deixou mais de 50 milhões de pessoas sem luz e causou 11 mortes;
   \item \textbf{Recall da Honda:} uma falha de programação no sistema de \textit{airbag} dos carros, fez com que a \textit{Honda}, fosse forçada a fazer um \textit{recall} de mais de 2 milhões de automóveis e custou milhões a empresa japonesa;
   \item \textbf{Radiação em excesso:} Entre os anos de 1985 e 1987, hospitais dos EUA utlizavam um aparelho chamado \textit{Therac-25} para o tratamento com radicação contra o câncer, um erro de programação no \textit{software} fazia com que a máquina aplicasse uma dosagem até 100 vezes maior do que a indicada para os pacientes, foram registradas 6 mortes por conta dessa falha;
   \item \textbf{Foguete Mariner:} uma fórmula matemática falha introduzida por uma programador fez com que o foguete fosse para fora do seu curso, causando um prejuízo de 18 milhões de dólares;
@@ -559,7 +559,7 @@ O TDD (Test Driven Development ou Desenvolvimento Guiado por Testes) é a prática
 codificação real para um segundo momento, forçando o desenvolvedor a focar sempre na simplicidade, refatorando seu código sempre que possível e buscando deixar o código sempre enxuto.
 A utilização dessa abordagem possibilita ao desenvolvedor tenha ao final do processo uma aplicação funcional, com uma estrutura bem feita e altamente testável. \cite{TDD:Aniche}
 
-\cite{Beck} enfatiza duas regras principais que devem ser seguidas, quando se utiliza TDD:
+\cite{Beck} enfatiza duas regras principais que devem ser seguidas quando se utiliza TDD:
 
 \begin{itemize}
   \item Escrever código novo somente quando um teste automatizado falhar;
@@ -578,9 +578,9 @@ Segundo \cite{Beck} a prática do TDD segue um ciclo chamado vermelho-verde-refat
 \end{figure}
 
 \begin{enumerate}
-  \item \textbf{Vermelho:} Desenvolvedor escreve um código que falhe, por vezes o código nem deve compilar;
+  \item \textbf{Vermelho:} Desenvolvedor escreve um código que falhe;
   \item \textbf{Verde:} Desenvolvedor escreve o mínimo de código necessário para que o teste passe, sem
-  se preocupar muito com a qualidade do que foi codificado;
+  se preocupar com a qualidade do que foi codificado, apenas foca que o teste passe;
   \item \textbf{Refatorar:} Como o teste já está verde, agora o desenvolvedor irá focar na melhoria do código escrito anteriomente.
 \end{enumerate}
 
@@ -592,17 +592,17 @@ Segundo \cite{TDD:Aniche} a utilização dessa prática de desenvolvimento trará va
   pedaço do código final tenha ao menos um teste sobre ele para assegurar seu funcionamento;
   \item \textbf{Simplicidade:} Quando o desenvolvedor aplica o ciclo ele sempre irá se preocupar em fazer o teste passar e irá focar seus esforços em um teste por vez, isso fará com que ele codifique sempre da forma mais simples, deixando de lado soluções mirabolantes ou complexas;
   \item \textbf{Melhor compreensão sobre o \textit{design} das classes:} Como o desenvolvedor irá focar sempre
-  em um teste e uma classe por vez, ele irá deixar de lado por um momento a integração geral das classes e irá
+  em um teste e uma classe por vez, irá deixar de lado por um momento a integração geral das classes e irá
   se preocupar em manter simples a classe na qual está trabalhando, aumentando a sua coesão e diminuindo seu
-  acoplamento
+  acoplamento.
 \end{itemize}
 
-\cite{TDD:Aniche} e \cite{Beck} também dizem que os teste podem refletir a saúde do código, quando um teste é complicado de escrever é um sinal que o código pode estar ruim ou não estar fazendo aquilo que realmente deveria fazer.
+\cite{TDD:Aniche} e \cite{Beck} também dizem que os testes podem refletir sobre a saúde do código, quando um teste é complicado de se escrever é um sinal que o código pode estar ruim ou não estar fazendo aquilo que realmente deveria fazer.
 
-Dentro das práticas do TDD ainda existe uma prática chamada "baby steps" que pode ser definida com a prática onde
+Dentro das práticas do TDD ainda existe uma prática chamada \textit{baby steps} que pode ser definida com a prática onde
 o código cresce aos poucos de forma incremental, forçando o desevolvedor a focar em um método por vez, praticando o ciclo do TDD em cada um dos métodos e classes do projeto.
 
-Segundo \cite{TDD:Aniche} a prática do "baby steps" aliado ao TDD irá proporcionar ao desenvolvedor receber um \textit{feedback} mais rápido e constante do seu código, podendo previnir e arrumar falhas de codificação de forma imediata diminuindo os custos e previnindo futuras manutenções no código.
+Segundo \cite{TDD:Aniche} a prática do \textit{baby steps} aliado ao TDD irá proporcionar ao desenvolvedor receber um \textit{feedback} mais rápido e constante do seu código, podendo previnir e arrumar falhas de codificação de forma imediata diminuindo os custos e previnindo futuras manutenções no código.
 
 A Figura \ref{figura_7} mostra como é a forma de recebimento do \textit{feedback} do código pelo desenvolvedor
 que prática o TDD e um desenvolvedor que não prática TDD.
