@@ -553,7 +553,69 @@ Dessa forma é possível notar que a atividade de testar \textit{software} deve se
 nos projetos, para garantir não só sua qualidade, mas também eliminar riscos de falhas do projeto e garatir
 a satisfação do cliente.
 
-% \section{TDD}
+\section{Test Driven Development (TDD)}
+
+O TDD (Test Driven Development ou Desenvolvimento Guiado por Testes) é a prática de desenvolvimento de \textit{software} onde os testes automatizados são criados antes de qualquer código real seja implementado, deixando a
+codificação real para um segundo momento, forçando o desenvolvedor a focar sempre na simplicidade, refatorando seu código sempre que possível e buscando deixar o código sempre enxuto.
+A utilização dessa abordagem possibilita ao desenvolvedor tenha ao final do processo uma aplicação funcional, com uma estrutura bem feita e altamente testável. \cite{TDD:Aniche}
+
+\cite{Beck} enfatiza duas regras principais que devem ser seguidas, quando se utiliza TDD:
+
+\begin{itemize}
+  \item Escrever código novo somente quando um teste automatizado falhar;
+  \item Eliminar código duplicado.
+\end{itemize}
+
+Segundo \cite{Beck} a prática do TDD segue um ciclo chamado vermelho-verde-refatorar (\textit{red}-\textit{green}-\textit{refactor}) como mostra a Figura \ref{figura_6} e pode ser definido da seguinte forma:
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/ciclo-tdd.jpg}
+    \caption{O ciclo do TDD}
+    \label{figura_6}
+    \cite{Imagem:TDD}
+  \end{center}
+\end{figure}
+
+\begin{enumerate}
+  \item \textbf{Vermelho:} Desenvolvedor escreve um código que falhe, por vezes o código nem deve compilar;
+  \item \textbf{Verde:} Desenvolvedor escreve o mínimo de código necessário para que o teste passe, sem
+  se preocupar muito com a qualidade do que foi codificado;
+  \item \textbf{Refatorar:} Como o teste já está verde, agora o desenvolvedor irá focar na melhoria do código escrito anteriomente.
+\end{enumerate}
+
+Segundo \cite{TDD:Aniche} a utilização dessa prática de desenvolvimento trará vantagens ao desenvolvedor, sendo elas:
+
+\begin{itemize}
+  \item \textbf{Focar no teste e não na sua implementação:} Nessa abordagem, o desenvolvedor irá focar em codificar apenas aquilo que o teste necessita, dessa forma ele irá focar apenas naquela classe ou trecho de código que está testando, deixando de lado um tempo a sua implementação;
+  \item \textbf{Código nasce testado:} Quando o desenvolvedor segue esse ciclo, ele irá garantir que cada
+  pedaço do código final tenha ao menos um teste sobre ele para assegurar seu funcionamento;
+  \item \textbf{Simplicidade:} Quando o desenvolvedor aplica o ciclo ele sempre irá se preocupar em fazer o teste passar e irá focar seus esforços em um teste por vez, isso fará com que ele codifique sempre da forma mais simples, deixando de lado soluções mirabolantes ou complexas;
+  \item \textbf{Melhor compreensão sobre o \textit{design} das classes:} Como o desenvolvedor irá focar sempre
+  em um teste e uma classe por vez, ele irá deixar de lado por um momento a integração geral das classes e irá
+  se preocupar em manter simples a classe na qual está trabalhando, aumentando a sua coesão e diminuindo seu
+  acoplamento
+\end{itemize}
+
+\cite{TDD:Aniche} e \cite{Beck} também dizem que os teste podem refletir a saúde do código, quando um teste é complicado de escrever é um sinal que o código pode estar ruim ou não estar fazendo aquilo que realmente deveria fazer.
+
+Dentro das práticas do TDD ainda existe uma prática chamada "baby steps" que pode ser definida com a prática onde
+o código cresce aos poucos de forma incremental, forçando o desevolvedor a focar em um método por vez, praticando o ciclo do TDD em cada um dos métodos e classes do projeto.
+
+Segundo \cite{TDD:Aniche} a prática do "baby steps" aliado ao TDD irá proporcionar ao desenvolvedor receber um \textit{feedback} mais rápido e constante do seu código, podendo previnir e arrumar falhas de codificação de forma imediata diminuindo os custos e previnindo futuras manutenções no código.
+
+A Figura \ref{figura_7} mostra como é a forma de recebimento do \textit{feedback} do código pelo desenvolvedor
+que prática o TDD e um desenvolvedor que não prática TDD.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/feedback-tdd.png}
+    \caption{\textit{Feedback} do código utilizando TDD}
+    \label{figura_7}
+    \cite{TDD:Aniche}
+  \end{center}
+\end{figure}
+
 % \section{BDD}
 % \section{Linguagem Ruby}
 
