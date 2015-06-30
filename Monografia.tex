@@ -25,7 +25,7 @@ a-pli-ca-do}
 \author{Luiz Cezer Marrone Filho}
 
 % Titulo da dissertação
-\title{Behavior Driven Development}
+\title{Desenvolvimento de Software utilizando abordagem do Behavior Driven Development}
 
 % Orientador
 \adviser{Maurício Henning}
@@ -68,22 +68,19 @@ a-pli-ca-do}
 \resumo
 
 % \noindent para não criar parágrafo (Retirar se existir parágrafo)
-% \noindent O tema deste trabalho é expor a forma como equipes de desenvolvimento de software
-% geograficamente distribuídas podem usufruir de métodos ágeis, como por exemplo o \textit{Scrum}, abordando quais
-% seus pontos fortes e desafios a serem superados.
-% \begin{keywords}
-%   Desenvolvimento de Software, Teste de Software, BDD, TDD
-% \end{keywords}
+\noindent Falta escrever...
+\begin{keywords}
+  Desenvolvimento de Software, Teste de Software, BDD, TDD
+\end{keywords}
 
 % Abstract
 \abstract
 
 % \noindent para não criar parágrafo (Retirar se existir parágrafo)
-% \noindent The purpose of this coursework is to expose the way that remote
-% development teams can use agile methods, like \textit{Scrum}, with focus in advantages, challenges to overcome.
-% \begin{keywords}
-%     Software Development, Distributed teams, Agile, Scrum
-% \end{keywords}
+\noindent Missing...
+\begin{keywords}
+    Software Development, Software Test, BDD, TDD
+\end{keywords}
 
 % Não remover
 \mainmatter
@@ -93,7 +90,7 @@ a-pli-ca-do}
 
 \chapter{Introdução}\label{cap_1}
 
-??
+Escrever....
 
 \section{Objetivo Geral}
 
@@ -109,15 +106,17 @@ a abordagem do BDD.
   desenvolvimento de \textit{software};
 \end{enumerate}
 
-\section{Justificativa do trabalho}
+\section{Justificativa do Trabalho}
 
-??
+Escrever....
+
+\section{Estrutura do Trabalho}
 
 \chapter{Referencial Teórico}\label{cap_2}
 
 Neste capítulo serão apresentados os principais conceitos que serão abordados durante o trabalho.
 
-\section{Falhas em projetos de \textit{software}}
+\section{Falhas em projetos de software}
 
 Desenvolvimento de \textit{software} é uma tarefa complicada para se praticar.  Muitas questões devem ser levadas
 em conta antes mesmo de iniciar a codificação, por exemplo, é preciso estudar sobre o problema que deve ser
@@ -364,6 +363,8 @@ de tudo aquilo que foi feito e o que ainda está pendente dentro da \textit{Sprin
 Com esse gráfico é possível medir o ritmo da equipe e detectar possíveis
 impedimentos. \cite{DesenvolvimentoAgil:Scrum}
 
+\clearpage
+
 Um exemplo de gráfico, pode ser visto na Figura \ref{figura_3} abaixo:
 
 \begin{figure}[hbt!]
@@ -374,8 +375,6 @@ Um exemplo de gráfico, pode ser visto na Figura \ref{figura_3} abaixo:
     \cite{BlogDouglasCunha}
   \end{center}
 \end{figure}
-
-\clearpage
 
 \subsection{Eventos do Scrum}
 
@@ -496,6 +495,8 @@ Existem fatores para determinar a qualidade de \textit{software} \cite{Pressman}
 Essas são os fatores propostos por McCall, Richards e Walters (1977) e
 citados por \cite{Pressman}. Esses fatores podem ser agrupados e representados conforme a Figura \ref{figura_4}.
 
+\clearpage
+
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/qualidade-de-software.jpg}
@@ -558,7 +559,8 @@ a satisfação do cliente.
 \section{Test Driven Development (TDD)}
 
 O TDD (Test Driven Development ou Desenvolvimento Guiado por Testes) é a prática de desenvolvimento de \textit{software} onde os testes automatizados são criados antes de qualquer código real seja implementado, deixando a
-codificação real para um segundo momento, forçando o desenvolvedor a focar sempre na simplicidade, refatorando seu código sempre que possível e buscando deixar o código sempre enxuto.
+codificação real para um segundo momento, forçando o desenvolvedor a focar sempre na simplicidade, refatorando seu código sempre que possível e buscando deixar o código sempre enxuto. \cite{TDD:Aniche}
+
 A utilização dessa abordagem possibilita ao desenvolvedor tenha ao final do processo uma aplicação funcional, com uma estrutura bem feita e altamente testável. \cite{TDD:Aniche}
 
 \cite{Beck} enfatiza duas regras principais que devem ser seguidas quando se utiliza TDD:
@@ -609,6 +611,8 @@ Segundo \cite{TDD:Aniche} a prática do \textit{baby steps} aliado ao TDD irá pro
 A Figura \ref{figura_7} mostra como é a forma de recebimento do \textit{feedback} do código pelo desenvolvedor
 que prática o TDD e um desenvolvedor que não prática TDD.
 
+\clearpage
+
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/feedback-tdd.png}
@@ -622,7 +626,8 @@ que prática o TDD e um desenvolvedor que não prática TDD.
 
 O BDD (Behavior Driven Development ou Desenvolvimento Guiado por Comportamento)
 é uma prática de desenvolvimento de \textit{software} que tenta gerar uma maior integração
-entre equipes de negócio e desenvolvimento.
+entre equipes de negócio e desenvolvimento. \cite{BDD:CasaDoCodigo}
+
 Nessa prática as equipes irão se focar em descrever um comportamento esperado pelo
 \textit{software} para após isso desenvolvedor o código necessário que irá solucionar o cenário desse comportamento, dessa forma pode-se validar se de fato o código criado irá atender
 a necessidade de negócio e se comportar de modo acertivo. \cite{BDD:CasaDoCodigo}
@@ -630,10 +635,11 @@ a necessidade de negócio e se comportar de modo acertivo. \cite{BDD:CasaDoCodigo
 O BDD pode ser dito como um evolução sobre o TDD, visto que o TDD foca na construção do código, BDD
 se preocupa em saber se o código criado irá se comporta de forma esperada e se
 consegue entregar a implementação da funcionalidade de forma esperada.
+
 O BDD fornece uma maneira com que equipes de áreas diferentes consigam trabalhar e
 escrever os cenários de teste juntas, já que a prática utiliza uma Linguagem Ubíqua na descrição dos seus cenários. \cite{BDD:CasaDoCodigo} \cite{BDD:Soares}
 
-O surgimento do BDD começou quando Dan North sentiu dificuldades de ensinar a seus alunos TDD,
+O surgimento do BDD começou quando Dan North sentiu dificuldades de ensinar TDD para seus alunos
 por conta de sua nomeclatura e da utilização da palavra teste.
 Seus alunos sentiam certa dificuldade em saber por onde começar a especificação.
 Dan North então se focou em escrever o primeiro \textit{framework} para de utilizar
@@ -694,8 +700,8 @@ seguindo o BDD ocorrem da seguinte forma:
   executado corretamente.
 \end{itemize}
 
-Com o desenvolvimento seguindo essa abordagem é possível verificar como o BDD ainda utiliza o TDD, porém eleva o nível do teste para um nível de especificação, saindo do escopo de apenas estar testando código.
-Permite então, que a equipe realmente veja que o código implementado atende
+Com o desenvolvimento seguindo essa abordagem é possível verificar como o BDD utiliza o TDD, porém eleva o nível do teste para o nível de especificação, saindo do escopo de apenas estar testando código.
+Permite então, que a equipe realmente veja que o código feito atende
 a necessidade, funciona corretamente e implementa a funcionalidade de forma esperada.
 
 \section{Linguagem Ruby}
