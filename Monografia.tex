@@ -132,7 +132,7 @@ Testar \textit{software} de maneira manual, abrindo todas as telas do projeto e 
 nova linha de código adicionada no projeto pode fazer com que todo o \textit{software} pare de funcionar. \cite{TDD:Aniche}
 
 Para tentar sanar esses problemas e viabilizar que o \textit{software} ainda seja testado é preciso mudar a
-abordagem para uma abordagem que facilite a forma como o desenvolvedore irá testar seu código, duas dessas
+abordagem para uma abordagem que facilite a forma como o desenvolvedor irá testar seu código, duas dessas
 abordagens comumente usadas por equipes ágeis são: TDD e BDD.
 
 \section{Metodologias Ágeis}
@@ -374,6 +374,8 @@ Um exemplo de gráfico, pode ser visto na Figura \ref{figura_3} abaixo:
     \cite{BlogDouglasCunha}
   \end{center}
 \end{figure}
+
+\clearpage
 
 \subsection{Eventos do Scrum}
 
@@ -618,18 +620,23 @@ que prática o TDD e um desenvolvedor que não prática TDD.
 
 \section{Behavior Driven Development (BDD)}
 
-O BDD (Behavior Driven Development ou Desenvolvimento Guiado por Comportamento) é uma prática de desenvolvimento
-de \textit{software} que tenta gerar uma maior integração entre equipes de negócio e desenvolvimento. Nessa prática as equipes irão se focar em descrever um comportamento esperado pelo \textit{software} para após isso
-desenvolvedor o código necessário que irá solucionar o cenário desse comportamento, dessa forma pode-se validar
-se de fato o código criado irá atender a necessidade de negócio e se comportar de modo acertivo. \cite{BDD:CasaDoCodigo}
+O BDD (Behavior Driven Development ou Desenvolvimento Guiado por Comportamento)
+é uma prática de desenvolvimento de \textit{software} que tenta gerar uma maior integração
+entre equipes de negócio e desenvolvimento.
+Nessa prática as equipes irão se focar em descrever um comportamento esperado pelo
+\textit{software} para após isso desenvolvedor o código necessário que irá solucionar o cenário desse comportamento, dessa forma pode-se validar se de fato o código criado irá atender
+a necessidade de negócio e se comportar de modo acertivo. \cite{BDD:CasaDoCodigo}
 
 O BDD pode ser dito como um evolução sobre o TDD, visto que o TDD foca na construção do código, BDD
-se preocupa em saber se o código criado irá se comporta de forma esperada e consegue entregar a implementação
-da funcionalidade de forma esperada. O BDD fornece uma maneira com que equipes de áreas
-diferentes consigam trabalhar e escrever os cenários de teste juntas, visto que a prática utiliza uma Linguagem Ubíqua na descrição dos seus cenários. \cite{BDD:CasaDoCodigo} \cite{BDD:Soares}
+se preocupa em saber se o código criado irá se comporta de forma esperada e se
+consegue entregar a implementação da funcionalidade de forma esperada.
+O BDD fornece uma maneira com que equipes de áreas diferentes consigam trabalhar e
+escrever os cenários de teste juntas, já que a prática utiliza uma Linguagem Ubíqua na descrição dos seus cenários. \cite{BDD:CasaDoCodigo} \cite{BDD:Soares}
 
-O surgimento do BDD começou quando Dan North sentiu dificuldades de ensinar a seus alunos TDD, por conta de
-sua nomeclatura e da utilização da palavra teste, seus alunos sentiam certa dificuldade em saber por onde começar a especificação. Dan North então se focou em escrever o primeiro \textit{framework} para de utilizar
+O surgimento do BDD começou quando Dan North sentiu dificuldades de ensinar a seus alunos TDD,
+por conta de sua nomeclatura e da utilização da palavra teste.
+Seus alunos sentiam certa dificuldade em saber por onde começar a especificação.
+Dan North então se focou em escrever o primeiro \textit{framework} para de utilizar
 BDD, surgiu então o \textit{JBehave}. Essa nova ferramenta tinha como foco tirar a referência da palavra teste
 e substituir por um vocabulário onde o foco fosse o comportamento. \cite{BDD:CasaDoCodigo} \cite{BDD:DanNorth}
 
@@ -657,17 +664,39 @@ chamada de \textit{outside-in development}, ou seja, deve-se começar com a espec
 de uma funcionalidade, após isso codificar as classes e métodos necessárias para satisfazer
 esse comportamento. \cite{BDD:CasaDoCodigo}
 
-Na Figura \ref{figura_10} visa ilustrar a forma de desenvolvimento proposta pelo BDD:
+Na Figura \ref{figura_8} visa ilustrar a forma de desenvolvimento proposta pelo BDD:
+
+\clearpage
 
 \begin{figure}[hbt!]
   \begin{center}
-    \epsfig{file=images/ciclo-bdd.jpg}
+    \epsfig{file=images/ciclo-bdd.png}
     \caption{O ciclo do BDD}
-    \label{figura_10}
-    \cite{TDD:Aniche}
+    \label{figura_8}
+    % \cite{TDD:Aniche}
   \end{center}
 \end{figure}
 
+Segundo \cite{BDD:CasaDoCodigo} e \cite{BDD:Sanchez} as etapas do processo de desenvolvimento
+seguindo o BDD ocorrem da seguinte forma:
+
+\begin{itemize}
+  \item Na primeira etapa do ciclo a equipe deve escrever um novo comportamento esperado
+  pelo \textit{software} e ao executar essa especificação ela deve falhar;
+  \item Na segunda etapa do ciclo a equipe entra no ciclo do TDD, escrevendo um teste de unidade
+  que também deverá falhar;
+  \item Na terceira etapa do ciclo deve-se codificar o mínimo necessário de código para que o teste feito
+  na segunda etapa passe;
+  \item Na quarta etapa o código escrito na terceira etapa deverá ser refatorado e após a refatoração
+  é necessário certificar-se de que o teste de unidade escrito na etapa dois, continue passando;
+  \item Na quinta e última etapa do ciclo, após o código ter sido codificado e refatorado é necessário
+  executar novamente a especificação e verificar que o comportamento está sendo
+  executado corretamente.
+\end{itemize}
+
+Com o desenvolvimento seguindo essa abordagem é possível verificar como o BDD ainda utiliza o TDD, porém eleva o nível do teste para um nível de especificação, saindo do escopo de apenas estar testando código.
+Permite então, que a equipe realmente veja que o código implementado atende
+a necessidade, funciona corretamente e implementa a funcionalidade de forma esperada.
 
 \section{Linguagem Ruby}
 
@@ -688,20 +717,25 @@ Na Figura \ref{figura_9} é possível ver um exemplo de código Ruby:
 
 \begin{figure}[hbt!]
   \begin{center}
-    \epsfig{file=images/ling-ruby.png}
+    \epsfig{file=images/ling-ruby-2.png}
     \caption{Exemplo de código Ruby}
     \label{figura_9}
     Autoria Própria
   \end{center}
 \end{figure}
 
-Na primeira linha da Figura está sendo criado uma nova variável
-chamada \textit{number} e sendo atribuído um valor 10, como Ruby possui uma tipagem dinâmica e 10 é um valor
-de tipo número inteiro, a interpretador irá entender que a variável number será do tipo inteiro.
+\clearpage
 
-Como em Ruby tudo é um objeto é possível fazer a checagem de qual tipo de objeto a variável \textit{number} é,
-nesse caso executando o comando \textit{number.class} e obtendo o resultado \textit{Fixnum}, indicando
-que a variável é um objeto do tipo inteiro.
+Na primeira linha da Figura está sendo criado uma nova variável
+chamada \textit{number} e sendo atribuído um valor 10, como \textit{Ruby} possui uma tipagem dinâmica e 10 é um valor de tipo número inteiro, o interpretador irá entender que a variável \textit{number}
+será do tipo \textit{Fixnum}.
+
+O mesmo ocorre para a variável \textit{name}, que foi criada recebendo uma \textit{string} "Luiz", o interpretador irá entender que \textit{name} é um valor do tipo \textit{String}
+
+Como em Ruby tudo é um objeto é possível fazer a checagem de qual tipo de objeto as variáveis \textit{number}
+e \textit{name} pertecem, nesse caso \textit{Fixnum} e \textit{String} respectivamente.
+
+Como \textit{Ruby} possui uma tipagem forte, ele não irá permitir que as duas variáveis, um \textit{Fixnum} e uma \textit{String}, executem a operação de soma, exibindo um erro.
 
 % \chapter{Materiais e Métodos}
 % \chapter{Resultados e Discussões}
