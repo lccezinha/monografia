@@ -600,7 +600,7 @@ Segundo \cite{TDD:Aniche} a utilização dessa prática de desenvolvimento trará va
 \cite{TDD:Aniche} e \cite{Beck} também dizem que os testes podem refletir sobre a saúde do código, quando um teste é complicado de se escrever é um sinal que o código pode estar ruim ou não estar fazendo aquilo que realmente deveria fazer.
 
 Dentro das práticas do TDD ainda existe uma prática chamada \textit{baby steps} que pode ser definida com a prática onde
-o código cresce aos poucos de forma incremental, forçando o desevolvedor a focar em um método por vez, praticando o ciclo do TDD em cada um dos métodos e classes do projeto.
+o código cresce aos poucos de forma incremental, forçando o desenvolvedor a focar em um método por vez, praticando o ciclo do TDD em cada um dos métodos e classes do projeto.
 
 Segundo \cite{TDD:Aniche} a prática do \textit{baby steps} aliado ao TDD irá proporcionar ao desenvolvedor receber um \textit{feedback} mais rápido e constante do seu código, podendo previnir e arrumar falhas de codificação de forma imediata diminuindo os custos e previnindo futuras manutenções no código.
 
@@ -616,33 +616,86 @@ que prática o TDD e um desenvolvedor que não prática TDD.
   \end{center}
 \end{figure}
 
-% \section{BDD}
+\section{Behavior Driven Development (BDD)}
+
+O BDD (Behavior Driven Development ou Desenvolvimento Guiado por Comportamento) é uma prática de desenvolvimento
+de \textit{software} que tenta gerar uma maior integração entre equipes de negócio e desenvolvimento. Nessa prática as equipes irão se focar em descrever um comportamento esperado pelo \textit{software} para após isso
+desenvolvedor o código necessário que irá solucionar o cenário desse comportamento, dessa forma pode-se validar
+se de fato o código criado irá atender a necessidade de negócio e se comportar de modo acertivo. \cite{BDD:CasaDoCodigo}
+
+O BDD pode ser dito como um evolução sobre o TDD, visto que o TDD foca na construção do código, BDD
+se preocupa em saber se o código criado irá se comporta de forma esperada e consegue entregar a implementação
+da funcionalidade de forma esperada. O BDD fornece uma maneira com que equipes de áreas
+diferentes consigam trabalhar e escrever os cenários de teste juntas, visto que a prática utiliza uma Linguagem Ubíqua na descrição dos seus cenários. \cite{BDD:CasaDoCodigo} \cite{BDD:Soares}
+
+O surgimento do BDD começou quando Dan North sentiu dificuldades de ensinar a seus alunos TDD, por conta de
+sua nomeclatura e da utilização da palavra teste, seus alunos sentiam certa dificuldade em saber por onde começar a especificação. Dan North então se focou em escrever o primeiro \textit{framework} para de utilizar
+BDD, surgiu então o \textit{JBehave}. Essa nova ferramenta tinha como foco tirar a referência da palavra teste
+e substituir por um vocabulário onde o foco fosse o comportamento. \cite{BDD:CasaDoCodigo} \cite{BDD:DanNorth}
+
+\cite{BDD:Sanchez} cita as principais alterações feitas por Dan North, na tentantiva de remover o conceito de teste e focar na descrição do comportamento:
+
+\begin{itemize}
+  \item Uso de \textit{\textbf{Context}} ao invés de \textit{TestCase};
+  \item Uso de \textit{\textbf{Specification}} ao invés de \textit{Test};
+  \item Uso de \textit{\textbf{Should}} ao invés de \textit{Assert}.
+\end{itemize}
+
+Além dessas, também foram introduzidas novas formas de criar cenários e validar seus critérios de aceitação \cite{BDD:CasaDoCodigo}:
+
+\begin{itemize}
+  \item \textit{\textbf{Feature}} que servirá para especificar e testar uma funcionalidade;
+  \item \textit{\textbf{Scenario}} irá descrever o cenário para qual o teste deve cobrir
+  e quais seus critérios de aceitação;
+  \item \textit{\textbf{Steps}} um cenário é composto por vários \textit{steps}, esses \textit{steps} irão
+  descrever o que se espera do \textit{software} e servirão de critério de aceitação.
+\end{itemize}
+
+A abordagem de desenvolvimento utilizando BDD propõe que o \textit{software} seja desenvolvido
+especificando as várias camadas do comportamento com testes automatizados seguindo uma abordagem
+chamada de \textit{outside-in development}, ou seja, deve-se começar com a especificação de um comportamento
+de uma funcionalidade, após isso codificar as classes e métodos necessárias para satisfazer
+esse comportamento. \cite{BDD:CasaDoCodigo}
+
+% Na Figura \ref{figura_10} visa ilustrar a forma de desenvolvimento proposta pelo BDD:
+
+% \begin{figure}[hbt!]
+%   \begin{center}
+%     \epsfig{file=images/ciclo-bdd.jpg}
+%     \caption{O ciclo do BDD}
+%     \label{figura_10}
+%     \cite{TDD:Aniche}
+%   \end{center}
+% \end{figure}
+
 
 \section{Linguagem Ruby}
 
 A linguagem foi criada no ano de 1995 no Japão Yukihiro "Matz" Matsumoto,
 é uma linguagem orientada a objeto interpretada, de tipagem forte e dinâmica.
 Foi criada baseada no que havia de melhor me outras
-linguagens como: \textit{Smalltalk}, \textit{Lisp} e \textit{Ada},
-tudo em Ruby é um objeto.
+linguagens como: \textit{Smalltalk}, \textit{Lisp} e \textit{Ada}.
+Tudo em Ruby é um objeto e sua sintaxe simples visa facilitar o desenvolvedor
+tanto na hora de escrever código como também na hora
+de ler código de outros desenvolvedores.
 
 É \textit{open-source} o que possibilita aos desenvolvedores abrirem e melhorem o
 código fonte sempre que julgarem necessário, o que possibilita uma melhoria
 constante na correção de erros e facilitando a melhoria e inclusão de novas
 funcionalidades a linguagem. \cite{Ruby:Thomas}
 
-Na Figura \ref{figura_8} é possível ver um exemplo de código Ruby:
+Na Figura \ref{figura_9} é possível ver um exemplo de código Ruby:
 
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/ling-ruby.png}
     \caption{Exemplo de código Ruby}
-    \label{figura_8}
+    \label{figura_9}
     Autoria Própria
   \end{center}
 \end{figure}
 
-Na primeira linha da Figura \ref{figura_8} está sendo criado uma nova variável
+Na primeira linha da Figura está sendo criado uma nova variável
 chamada \textit{number} e sendo atribuído um valor 10, como Ruby possui uma tipagem dinâmica e 10 é um valor
 de tipo número inteiro, a interpretador irá entender que a variável number será do tipo inteiro.
 
