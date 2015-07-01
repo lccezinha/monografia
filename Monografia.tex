@@ -193,7 +193,7 @@ dentro do processo de desenvolvimento \cite{Beck}. O manifesto Ágil possui valor
 
 \begin{itemize}
   \item \textbf{Indivíduos e interações} mais que processos e ferramentas;
-  \item \textbf{ \textit{Software} em funcionamento} mais que documentação detalhada;
+  \item \textbf{\textit{Software} em funcionamento} mais que documentação detalhada;
   \item \textbf{Colaboração com cliente} mais que negócios e contratos;
   \item \textbf{Responder a mudança} mais que seguir um plano;
 
@@ -249,13 +249,17 @@ aprender com o mesmo e avaliar se o que foi desenvolvido era o desejado. \cite{D
 \begin{itemize}
   \item \textbf{\textit{Feedback}:} Quanto mais cedo um problema for descoberto, menos prejuízo e atraso ao
   \textit{software} ele dará e maiores são chances de ele ser resolvido rapidamente;
+
   \item \textbf{Comunicação:} Da várias formas de se comunicar existentes, times que utilizam XP prezam
   por uma conversa presencial para melhorar a compreensão e entendimento entre os membros;
+
   \item \textbf{Simplicidade:} Embora muitas vezes no desenvolvimento é um hábito desenvolver pensando
   em futuras implementações, no XP o time é focado em desenvolver o que é necessário para agora, entregando
   o que realmente o cliente necessita para o momento, deixando o que vier depois, para depois;
+
   \item \textbf{Coragem:} Equipes de desenvolvimento precisam encarar mudanças constantes nos projetos e para
   isso é necessário coragem e confiança em suas práticas;
+
   \item \textbf{Respeito} É o valor mais básico e serve de base a todos, pois dará confiança e respeito a toda equipe durante o processo.
 \end{itemize}
 
@@ -265,10 +269,13 @@ a equipe deve tomar no ambiente de trabalho e como se deve ocorrer o processo de
 
 \begin{itemize}
   \item \textbf{\textit{Design} simples e incremental:} O desenvolvimento da aplicação será de maneira iterativa e incremental, ou seja, a equipe se focará em desenvolver os \textit{software} do modo mais simples possível, dando valor e codificando o que é realmente necessário para o cliente e permitindo o \textit{software} crescer aos poucos;
+
   \item \textbf{Programação em pares:} É uma prática que visa nivelar o trabalho da equipe, sugerindo que dois
   programadores trabalhem juntos de forma colaborativa na mesma tarefa, enquanto um foca sua atenção na criação do código o outro tera o trabalho de revisar e manter o primeiro focado na solução mais simples;
+
   \item \textbf{Código de posse coletiva:} Em um projeto todos tem responsabilidade e liberdade de alterar todo e qualque código encontrado, o código não pertence a ninguém e sim a todo mundo. Isso ocorre quando equipes
   trocam de membro de forma constante e abordando o código dessa maneira é mais fácil transmitir o conhecimento do projeto, sem atrelar determinados códigos ou funcionalidades a determinados desenvolvedores;
+
   \item \textbf{Desenvolvimento guiado por testes:} É a prática que propoem a crição dos testes antes mesmo do código de produção ser implementado, tem como objetivo maior detectar e solucionar
   todas as possíveis falhas do desenvolvimento por meio dos testes. Dessa forma, quando um código é terminado
   não é preciso voltar até ele para testá-lo, pois ele já estará testado e pronto.
@@ -309,47 +316,27 @@ A visão geral do processo de \textit{Sprint} pode ser vista na Figura \ref{figur
 
 \subsection{O time do Scrum}
 
-Dentro do \textit{Scrum} existem três papéis definidos: o Time de desenvolvimento, \textit{Scrum Master}
-e o \textit{Product Owner}. Embora existam essas três separações, toda equipe é igualmente responsável
+Segundo \cite{LivroScrumCasaDoCodigo} dentro do \textit{Scrum} existem três papéis definidos: o Time de desenvolvimento, \textit{Scrum Master}.
+
+\begin{itemize}
+  \item \textbf{Time de desenvolvimento:} Geralmente é uma equipe composta de 3 a 10 pessoas e são os
+  responsáveis pela entrega do produto. Formam um time auto-organizado, multidisciplinar, motivado e com foco em qualidade. Dentro do time não há divisões entre programadores, \textit{designers}, engenheiros ou analistas;
+
+  \item \textit{\textbf{Product Owner:}} É o responsável pela visão do produto, por tomar as decisões de negócio, definir e priorizar as atividades do \textit{Product Backlog}, ele representa a necessidade
+  do cliente em relação ao produto que está sendo desenvolvido;
+
+  \item \textit{\textbf{Scrum Master:}} É o responsável por garantir o funcionamento e execução do \textit{Scrum} no
+  decorrer de uma \textit{Sprint}. Possui além de conhecimentos técnicos, habilidade de gerenciar pessoas,
+  técnicas para facilitar o trabalho e está sempre tentando remover qualquer bloqueio
+  que possa impedir o time de desenvolvimento.
+\end{itemize}
+
+Embora existam essas três separações, toda equipe é igualmente responsável
 e responsabilizada pelo resultados obtidos, isso faz com que todos se comprometam com o projeto inteiramente.
 
 Todos os membros juntos, formam o chamado Time do \textit{Scrum}, todos visam trabalhar juntos de forma colaborativa,
 para que como equipe todos consigam alcançar um único objetivo coletivo.
-
-\subsubsection{Time de desenvolvimento}
-
-São os responsáveis pela entrega do produto, geralmente um time é composto de três a dez pessoas.
-Formam um time auto-organizado, multidisciplinar, motivado e com foco em qualidade.
-Dentro do time não há divisões entre programadores, \textit{designers}, engenheiros ou analistas.
-Todos trabalham juntos de forma igualmente responsável, com objetivo de
-entregar o que foi prometido para a \textit{Sprint}. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
-
-O time possui várias atividades e tarefas dentro da \textit{Sprint}:
-
-\begin{itemize}
-  \item Planejar seu trabalho junto ao \textit{Product Owner} e posteriomente dividir as tarefas entre a equipe;
-  \item Realizar as tarefas para que o objetivo da \textit{Sprint} seja atingido;
-  \item Interagir com \textit{Product Owner} sempre que for necessário esclarecimento de alguma regra de negócio;
-  \item Identificar e informar ao \textit{Scrum Master} todo e qualquer impedimento que possa atrapalhar
-  o trabalho da equipe;
-  \item Entregar valor para o cliente de forma frequente, organizada e com qualidade.
-\end{itemize}
-
-\subsubsection{Product Owner}
-
-É o responsável pela visão do produto, por tomar as decisões de negócio, definir e priorizar as atividades
-do \textit{Product Backlog}, ele representa a necessidade do cliente em relação ao produto que está sendo
-desenvolvido.
-
-Também colabora com o time de desenvolvimento a longo da \textit{Sprint} no esclarecimento de dúvidas
-sobre as regras de negócio e fica responsável por aceitar ou não o trabalho entregue pela equipe
-no decorrer da \textit{Sprint}, validando se o que foi entregue é realmente o que foi combinado
-e irá satisfazer a necessidade do cliente. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
-
-\subsubsection{Scrum Master}
-
-O \textit{Scrum Master} é o responsável por garantir o funcionamento e execução do \textit{Scrum} no
-decorrer de uma \textit{Sprint}. Possui além de conhecimentos técnicos, habilidade de gerenciar pessoas, técnicas para facilitar o trabalho e está sempre tentando remover qualquer bloqueio que possa impedir o time de desenvolvimento. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
+\cite{LivroScrumCasaDoCodigo} \cite{GuiaDoScrum}
 
 \subsection{Artefatos do Scrum}
 
@@ -357,154 +344,65 @@ Os artefatos do \textit{Scrum} servem como ferramentas de opoio a todo o time, a
 possam ter um acompanhamento geral dos trabalho durante a \textit{Sprint} e uma visão geral
 do andamento do produto que está sendo feito.
 
-\subsubsection{Product Backlog}
-
-É lista de funcionalidades desejadas para o produto que está sendo desenvolvido. É responsabilidade
-do \textit{Produto Owner} adicionar, remover, priorizar todas as tarefas dentro do \textit{Product Backlog}.
-Necessariamente não contêm somente novas funcionalidades, podem também conter melhorias, correções de falhas,
-questões técnicas, ou seja, tudo que for necessário e possa vir a ser desenvolvido para entregar o produto.
-
-Incialmente não precisa conter todas as tarefas, pode conter somente aquelas necessárias para iniciar o desenvolvimento do produto e a medida que o time e o cliente aprendem mais sobre o produto, novas
-tarefas serem adicionadas. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
-
-\subsubsection{Sprint Backlog}
-
-É lista de funcionalidades extraídas de dentro do \textit{Product Backlog} que serão desenvolvidas durante
-uma \textit{Sprint} pelo time de desenvolvimento. Os itens são extraídos de acordo com a priorização do
-\textit{Product Owner} e a equipe tem a liberadade de escolher os itens que são inclusos na \textit{Sprint}
-de acordo com a sua percepção do tempo que cada item levará para ficar pronto.
-
-O desempenho do time pode ser medido, baseando-se na quantidade de itens que foram entregues
-entre um dia  outro da \textit{Sprint}. \cite{LivroScrumCasaDoCodigo} \cite{DesenvolvimentoAgil:Scrum}
-
-\subsubsection{Quadro de Tarefas}
-
-Para tornar mais fácil e visual o acompanhamento das tarefas dentro da \textit{Sprint}, é
-um comum equipes usarem um quadro de tarefas, que geralmente é quebrado de acordo com a situação
-de cada tarefa dentro da \textit{Sprint}. \cite{DesenvolvimentoAgil:Scrum}
-
-Geralmente esse quadro possui as seguintes situações: Pendente, Andamento, Finalizado. Um exemplo desse
-quadro pode ser visto na Figura \ref{figura_2} abaixo:
-
-\begin{figure}[hbt!]
-  \begin{center}
-    \epsfig{file=images/quadro-tarefas.png}
-    \caption{Quadro de tarefas de uma equipe ágil}
-    \label{figura_2}
-    \cite{BlogCaelum}
-  \end{center}
-\end{figure}
-
-\subsubsection{Gráfico de Burn Down}
-
-Aliado ao quadro de tarefas, é comum equipes ágeis utilizarem gráficos para melhorar o acompanhamento
-de tudo aquilo que foi feito e o que ainda está pendente dentro da \textit{Sprint}.
-Com esse gráfico é possível medir o ritmo da equipe e detectar possíveis
-impedimentos. \cite{DesenvolvimentoAgil:Scrum}
-
-\clearpage
-
-Um exemplo de gráfico, pode ser visto na Figura \ref{figura_3} abaixo:
-
-\begin{figure}[hbt!]
-  \begin{center}
-    \epsfig{file=images/burndown.png}
-    \caption{Gráfico de \textit{Burn Down} do \textit{Scrum} }
-    \label{figura_3}
-    \cite{BlogDouglasCunha}
-  \end{center}
-\end{figure}
-
-\subsection{User Story}
-
-É descrição de uma real necessidade do projeto, ou seja, uma funcionalidade esperada no sistema.
-É escrita do ponto de vista do usuário e ele deverá descrever o que deseja fazer e como deseja fazer. \cite{GuiaDoScrum}
-
-Segundo \cite{LivroScrumCasaDoCodigo} uma \textit{User Story} pode ser descrita da seguinte forma:
+Conforme \cite{DesenvolvimentoAgil:Scrum} e \cite{DesenvolvimentoAgil:Scrum} os artefatos mais comuns são:
 
 \begin{itemize}
-  \item \textbf{Como um} - papel dentro do \textit{software};
-  \item \textbf{Eu quero} - funcionalidade que espera executar;
-  \item \textbf{Para que} - Objetivo para o qual essa funcinalidade será criada.
-\end{itemize}
+  \item \textit{\textbf{Product Backlog:}} É lista de funcionalidades desejadas para o produto que está sendo desenvolvido. É responsabilidade do \textit{Produto Owner} adicionar, remover, priorizar todas as tarefas
+  dentro do \textit{Product Backlog};
 
-Através dessa coleção de \textit{User Stories} o \textit{Product Backlog} será carregado e cada uma será
-transformada em uma funcionalidade do sistema.
+  \item \textit{\textbf{Sprint Backlog:}} É lista de funcionalidades extraídas de dentro do
+  \textit{Product Backlog} que serão desenvolvidas durante uma
+  \textit{Sprint} pelo time de desenvolvimento. Os itens são extraídos de acordo
+  com a priorização do \textit{Product Owner} e a equipe tem a liberadade de escolher
+  os itens que são inclusos;
+
+  \item \textit{\textbf{User Story:}} É descrição de uma real necessidade do projeto,
+  ou seja, uma funcionalidade esperada no sistema. É escrita do ponto de vista do usuário e
+  ele deverá descrever o que deseja fazer e como deseja fazer.
+    \begin{itemize}
+      \item \textbf{Como um} - papel dentro do \textit{software};
+      \item \textbf{Eu quero} - funcionalidade que espera executar;
+      \item \textbf{Para que} - objetivo para o qual essa funcinalidade será criada.
+    \end{itemize}
+\end{itemize}
 
 \subsection{Eventos do Scrum}
 
 Eventos do \textit{Scrum}, são na verdade o próprio ciclo de desenvolvimento, denominado \textit{Sprint}.
 Durante o período da \textit{Sprint} a equipe faz um série de cerimônias com objetivo de atualizar todos
 os membros sobre o andamento do trabalho e também ajuda a detectar algum possível impedimento para o
-escopo da \textit{Sprint}.
+escopo da \textit{Sprint}. \cite{GuiaDoScrum} \cite{LivroScrumCasaDoCodigo}
 
-\subsubsection{Sprint}
-
-A \textit{Sprint} é um mini-projeto, que tem duração entre uma e quatro semanas
-e é durante esse intervalo de tempo que o Time de desenvolvimento faz o incremento do produto.
-O objetivo maior da \textit{Sprint} é que ao seu final uma nova parte utilizável do software seja entregue.
-
-As \textit{Sprints} sempre se iniciam com uma \textit{Sprint Planning} que é uma reunião, com participação
-de todos os envolvidos no projeto e nessa reunião são definidas quais tarefas serão desenvolvidas pelo
-time de desenvolvimento para adicionar um novo incremento ao produto. Ocorrem em sequência, ou seja,
-não há intervalos entre as \textit{Sprints}, cada vez que uma termina, uma nova \textit{Sprint} se inicia.
-\cite{GuiaDoScrum} \cite{LivroScrumCasaDoCodigo}
-
-Existem algumas regras que devem ser seguidas dentro de uma \textit{Sprint}:
+Segundo \cite{GuiaDoScrum} e \cite{LivroScrumCasaDoCodigo} o principais eventos dentro do \textit{Scrum}, são:
 
 \begin{itemize}
-  \item Não são feitas mudanças que podem por em risco o objetivo da \textit{Sprint};
-  \item As metas de qualidade nunca diminuem;
-  \item O escopo pode ser negociado com o \textit{Product Owner};
-  \item Somente o \textit{Product Owner} tem autoridade para cancelar uma \textit{Sprint}.
+  \item \textit{\textbf{Sprint:}} É um mini-projeto, que tem duração entre uma e quatro semanas
+  e é durante esse intervalo de tempo que o Time de desenvolvimento faz o incremento do produto.
+  O objetivo maior da \textit{Sprint} é que ao seu final uma nova parte utilizável do software seja entregue.
+
+  \item \textit{\textbf{Sprint Planning:}} É uma reunião com participação de todos os envolvidos
+  onde o \textit{Product Owner} mostra quais as atividides de maior prioridade naquele momento
+  e a equipe irá selecionar quais dessas atividades entram na \textit{Sprint}
+  para gerar um novo incremento no \textit{software};
+
+  \item \textit{\textbf{Dayli Scrum:}} É uma reunião curta e realizada todos os dias pela equipe de desenvolvimento, geralmente ocorre sempre no mesmo horário e tem uma duração de aproximadamente quinze minutos.
+  Durante os \textit{Dayli Scrums} todos os membros da equipe se focam em responder três perguntas:
+  \begin{itemize}
+    \item O que eu fiz ontem ?;
+    \item O que eu farei hoje ?;
+    \item Algum impedimento para o que eu fiz ontem ou terei que fazer hoje ?
+  \end{itemize}
+
+  \item \textit{\textbf{Sprint Review:}} é uma reunião feita com toda a equipe ao final de uma \textit{Sprint}.
+  Tem como objetivo avaliar tudo que foi feito ao longo da \textit{Sprint}, se o que foi feito
+  está de acordo com o que foi combinado na reunião de \textit{Sprint Planning} e se irá
+  entrega um novo incremento ao \textit{software};
+
+  \item \textit{\textbf{Sprint Retrospective:}} É uma análise feita entre o a \textit{Sprint Review} e a próxima
+  \textit{Sprint Planning}, serve para avaliar o que foi feito na última \textit{Sprint},
+  quais pontos do processo foram falhos, quais ajudaram a equipe a ter uma melhor performance
+  e quais pontos podem ser melhorados para otimização da equipe.
 \end{itemize}
-
-\subsubsection{Sprint Planning}
-
-É a primeira cerimônia de uma nova \textit{Sprint}. É uma reunião com participação de todos os envolvidos
-onde o \textit{Product Owner} mostra quais as atividides de maior prioridade naquele momento
-e a equipe irá selecionar quais dessas atividades entram na \textit{Sprint}
-para gerar um novo incremento no \textit{software}.
-
-Nessa reunião o time de desenvolvimento tem a liberdade de questionar o \textit{Product Owner}
-sobre as atividades e também obter esclarecimento sobre dúvidas.
-Essas tarefas selecionadas darão origem ao \textit{Sprint Backlog}.
-\cite{GuiaDoScrum} \cite{DesenvolvimentoAgil:Scrum}
-
-\subsubsection{Dayli Scrum}
-
-É uma reunião curta e realizada todos os dias pela equipe de desenvolvimento, geralmente ocorre sempre no mesmo
-horário e tem uma duração de aproximadamente quinze minutos. Essa reunião visa melhorar a organização
-da equipe e tem como foco a transparência para que todos saibam o que todos estão fazendo e se alguém
-está passando por alguma dificuldade.
-
-Durante os \textit{Dayli Scrums} todos os membros da equipe se focam em responder três perguntas:
-
-\begin{itemize}
-  \item O que eu fiz ontem ?;
-  \item O que eu farei hoje ?;
-  \item Algum impedimento para o que eu fiz ontem ou terei que fazer hoje ?
-\end{itemize}
-
-Se algum impedimento é encontrado, o \textit{Scrum Master} irá agir
-com a finalidade de remover esse bloqueio para que o fluxo de trabalho da equipe continue.
-\cite{DesenvolvimentoAgil:Scrum}
-
-\subsubsection{Sprint Review}
-
-A \textit{Sprint Review} é uma reunião feita com toda a equipe ao final de uma \textit{Sprint}.
-Tem como objetivo avaliar tudo que foi feito ao longo da \textit{Sprint}, se o que foi feito
-está de acordo com o que foi combinado na reunião de \textit{Sprint Planning} e se irá
-entrega um novo incremento ao \textit{software}. Também serve para detectar se houveram
-problemas críticos que pudessem atrapalhar o andamento do trabalho e como eles foram solucionados.
-\cite{DesenvolvimentoAgil:Scrum}
-
-\subsubsection{Sprint Retrospective}
-
-É uma análise feita entre o a \textit{Sprint Review} e a próxima \textit{Sprint Planning},
-serve para avaliar o que foi feito na última \textit{Sprint}, quais pontos do processo foram falhos, quais
-ajudaram a equipe a ter uma melhor performance
-e quais pontos podem ser melhorados para otimização da equipe. \cite{DesenvolvimentoAgil:Scrum}
 
 \section{Qualidade de Software}
 
@@ -709,7 +607,8 @@ e substituir por um vocabulário onde o foco fosse o comportamento. \cite{BDD:Cas
   \item Uso de \textit{\textbf{Should}} ao invés de \textit{Assert}.
 \end{itemize}
 
-Além dessas, também foram introduzidas novas formas de criar cenários e validar seus critérios de aceitação \cite{BDD:CasaDoCodigo}:
+Além dessas, também foram introduzidas novas formas de criar cenários e validar seus critérios de aceitação
+\cite{BDD:CasaDoCodigo}:
 
 \begin{itemize}
   \item \textit{\textbf{Feature}} que servirá para especificar e testar uma funcionalidade;
@@ -719,23 +618,34 @@ Além dessas, também foram introduzidas novas formas de criar cenários e validar 
   descrever o que se espera do \textit{software} e servirão de critério de aceitação.
 \end{itemize}
 
+Uma especificação de comportamento no BDD é descrita de forma muito similar a uma \textit{User Story} do
+\textit{Scrum} e por isso é uma prática dentro de times \textit{Scrum} a utilização do BDD.
+Outro ponto importante da utilização do BDD no processo de desenvolvimento é que as especificações
+ao longo do tempo, acabam se tornando uma documentação viva do sistema. \cite{BDD:Sanchez}
+
+De forma simples, uma especificação é composta da seguinte maneira:
+
+\begin{itemize}
+  \item \textbf{Como um} - papel dentro do \textit{software};
+  \item \textbf{Eu quero} - funcionalidade que espera executar;
+  \item \textbf{Para que} - objetivo para o qual essa funcinalidade será criada.
+\end{itemize}
+
+E para a descrição do cenário do comportamento:
+
+\begin{itemize}
+  \item \textbf{Dado} - é o contexto inicial;
+  \item \textbf{Quando} - ocorre a execução de alguma atividade;
+  \item \textbf{Então} - descreve qual o resultado esperado para essa execução.
+\end{itemize}
+
 A abordagem de desenvolvimento utilizando BDD propõe que o \textit{software} seja desenvolvido
 especificando as várias camadas do comportamento com testes automatizados seguindo uma abordagem
 chamada de \textit{outside-in development}, ou seja, deve-se começar com a especificação de um comportamento
 de uma funcionalidade, após isso codificar as classes e métodos necessárias para satisfazer
 esse comportamento. \cite{BDD:CasaDoCodigo}
 
-% Segundo \cite{LivroScrumCasaDoCodigo} uma \textit{User Story} pode ser descrita da seguinte forma:
-
-% \begin{itemize}
-%   \item \textbf{Como um} - papel dentro do \textit{software};
-%   \item \textbf{Eu quero} - funcionalidade que espera executar;
-%   \item \textbf{Para que} - Objetivo para o qual essa funcinalidade será criada.
-% \end{itemize}
-
 Na Figura \ref{figura_8} visa ilustrar a forma de desenvolvimento proposta pelo BDD:
-
-% \clearpage
 
 \begin{figure}[hbt!]
   \begin{center}
@@ -784,6 +694,8 @@ funcionalidades a linguagem. \cite{Ruby:Thomas}
 
 Na Figura \ref{figura_9} é possível ver um exemplo de código Ruby:
 
+\clearpage
+
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/ling-ruby-2.png}
@@ -792,8 +704,6 @@ Na Figura \ref{figura_9} é possível ver um exemplo de código Ruby:
     Autoria Própria
   \end{center}
 \end{figure}
-
-\clearpage
 
 Na primeira linha da Figura \ref{figura_9} está sendo criado uma nova variável
 chamada \textit{number} e sendo atribuído um valor 10, como \textit{Ruby} possui uma tipagem dinâmica e 10 é um valor de tipo número inteiro, o interpretador irá entender que a variável \textit{number}
