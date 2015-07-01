@@ -68,7 +68,16 @@ a-pli-ca-do}
 \resumo
 
 % \noindent para não criar parágrafo (Retirar se existir parágrafo)
-\noindent Falta escrever...
+\noindent A utilização de testes de \textit{software} em seu processo de desenvolvimento
+irá proporcionar um código de melhor qualidade, confiança e segurança.
+A utilização de TDD irá ajudar o desenvolvedor a focar na solução simples de seu código,
+porém só isso não basta para validar seu correto funcionamento. Visando garantir
+que o código entregue atenda as reais necessidades do \textit{software} e também tentando
+aproximar equipes de negócio e de desenvolvimento, surge o BDD. O BDD tira o foco do código
+para focar no comportamento. Esse trabalho tem como objetivo utilizar as técnicas
+de TDD e BDD no desenvolvimento de \textit{software} para demonstrar, através de um
+estudo experimental, como o uso adequado dessas técnicas pode melhorar o código e a compreensão
+da equipe sobre produto gerado.
 \begin{keywords}
   Desenvolvimento de Software, Teste de Software, BDD, TDD
 \end{keywords}
@@ -90,7 +99,35 @@ a-pli-ca-do}
 
 \chapter{Introdução}\label{cap_1}
 
-Escrever....
+Desenvolver \textit{software} é uma tarefa complicada, devido aos vários fatores
+que estão envolvidos na sua construção e devem ser avaliados antes mesmo do projeto ser iniciado.
+Porém nos dias atuais, entregar um \textit{software} funcionando não basta, é preciso
+que o produto entregue tenha qualidade, segurança e atenda a real necessidade para o qual ele
+se propõe.
+
+Entre as técnicas que tentam melhorar a acertividade e a qualidade do \textit{software} entregue,
+surge o TDD. O TDD (\textit{Test Driven Development} ou Desenvolvimento Guiado por Testes) visa minimizar
+os problemas do desenvolvimento e perca de tempo com \textit{debug}, adotando a técnica de criar testes
+antes de criar código. \cite{TDD:Aniche}
+
+Com essa troca de hábito o desenvolvedor irá primeiro criar um código que irá falhar,
+após isso irá criar um código o mais simples possível apenas para que o teste antes falho, funcione.
+Na última etapa o desenvolver irá codificar a melhor solução para resolver aquele teste,
+sempre focando na simplicidade. Ao final desse processo, já é possível ter um código simples, que solucione o problema
+testado e feito da melhor maneira possível. \cite{TDD:Aniche}
+
+Porém o TDD foca no código e nas suas melhores práticas, porém para validar se a funcionalidade entregue
+realmente cumpre seu papel é preciso uma outra abordagem. O BDD surge então como um complemento ao TDD,
+onde ao invés de focar no código, irá focar no comportamento e tentará validar se o código entregue
+consegue garantir que o comportamento esperado pelo \textit{software} esteja correto. \cite{BDD:DanNorth}
+
+Além disso o BDD permite uma forma de integrar equipes de negócio e desenvolvimento, fazendo com que as duas
+falem a mesma linguagem e tenha um objetivo único, entregar \textit{software} com qualidade e que atenda
+os requisitos esperados pelo cliente. \cite{BDD:Sanchez} \cite{BDD:CasaDoCodigo}
+
+Esse trabalho tem como foco conceitualizar sobre o uso das técnicas de TDD e BDD
+no desenvolvimento ágil de \textit{software} e através de um estudo experimental avaliar os
+benefícios da utilização dessas abordagens.
 
 \section{Objetivo Geral}
 
@@ -732,7 +769,7 @@ Na Figura \ref{figura_9} é possível ver um exemplo de código Ruby:
 
 \clearpage
 
-Na primeira linha da Figura está sendo criado uma nova variável
+Na primeira linha da Figura \ref{figura_9} está sendo criado uma nova variável
 chamada \textit{number} e sendo atribuído um valor 10, como \textit{Ruby} possui uma tipagem dinâmica e 10 é um valor de tipo número inteiro, o interpretador irá entender que a variável \textit{number}
 será do tipo \textit{Fixnum}.
 
