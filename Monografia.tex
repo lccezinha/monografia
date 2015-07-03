@@ -128,13 +128,13 @@ Na última etapa o desenvolver irá codificar a melhor solução para resolver aquel
 sempre focando na simplicidade. Ao final desse processo, já é possível ter um código simples, que solucione o problema
 testado e feito da melhor maneira possível. \cite{TDD:Aniche}
 
-Porém o TDD foca no código e nas suas melhores práticas, porém para validar se a funcionalidade entregue
+O TDD foca no código e nas suas melhores práticas, porém para validar se a funcionalidade entregue
 realmente cumpre seu papel é preciso uma outra abordagem. O BDD surge então como um complemento ao TDD,
 onde ao invés de focar no código, irá focar no comportamento e tentará validar se o código entregue
 consegue garantir que o comportamento esperado pelo \textit{software} esteja correto. \cite{BDD:DanNorth}
 
 Além disso o BDD permite uma forma de integrar equipes de negócio e desenvolvimento, fazendo com que as duas
-falem a mesma linguagem e tenha um objetivo único, entregar \textit{software} com qualidade e que atenda
+falem a mesma linguagem e tenham um objetivo único, entregar \textit{software} com qualidade e que atenda
 os requisitos esperados pelo cliente. \cite{BDD:Sanchez} \cite{BDD:CasaDoCodigo}
 
 Esse trabalho tem como foco conceitualizar sobre o uso das técnicas de TDD e BDD
@@ -157,8 +157,8 @@ a abordagem do BDD.
 
 \section{Justificativa do Trabalho}
 
-Os riscos de se desenvolver \textit{software} sem o mínimo de testes é muito grande
-para o projeto, os riscos vão desde atrasos no projeto, demora na resolução de \textit{bugs}, rigidez
+Os riscos de se desenvolver \textit{software} sem o mínimo de testes é muito grande.
+Esses riscos vão desde atrasos no projeto, demora na resolução de \textit{bugs}, rigidez
 na hora de executar uma alteração no projeto. Além desses problemas estruturais como código
 mal feito também podem surgir problemas na hora de validar se o código entregue realmente
 atende a necessidade para o qual ele se proprõe.
@@ -166,9 +166,9 @@ atende a necessidade para o qual ele se proprõe.
 A utilização da técnica de TDD pelos desenvolvedores irá causar uma mudança na forma como
 o desenvolver irá escrever seu código. Abordando essa técnica, o desenvolver irá escrever sempre
 ao menos um teste antes de criar determinado código, fazendo essa troca na ordem no seu dia a dia
-o desenvolvedor irá se forçar a sempre focar em uma solução simples e que irá resolver o problema
-da melhor maneira, e obtendo um \textit{feedback} constante de seu trabalho,
-deixando dessa forma, seu código enxuto, simples e com um mínimo de cobertura de testes.
+o desenvolvedor irá se forçar a sempre focar em uma solução simples que irá resolver o problema
+da melhor maneira e obtendo um \textit{feedback} constante de seu trabalho.
+Dessa forma o código ficará mais enxuto, simples e com um mínimo de cobertura de testes.
 \cite{TDD:Aniche}
 
 Porém para equipes ágeis que utilizam \textit{Scrum} apenas código entregue com qualidade não basta,
@@ -188,7 +188,7 @@ do tema, definindo os objetivos e a justificativa pela escolha do trabalho.
 
 O segundo capítulo trata de todo o embasamento teórico, onde serão tratadas todos os conceitos
 para o claro entendimento do trabalho. O terceiro capítulo apresenta o estudo experimental,
-onde será construida uma aplicação utilizando as técnicas de teste que foram conceituadas no capítulo anterior e
+onde será construída uma aplicação utilizando as técnicas de teste que foram conceituadas no capítulo anterior e
 ao final do desenvolvimento apontar as principais vantagens e conclusões sobre o estudo desenvolvido.
 O quarto capítulo apresenta as discussões sobre os resultados obtidos.
 
@@ -332,8 +332,8 @@ dos valores e princípios, em 1990 surge o \textit{Scrum} que segue a seguinte de
 
 \begin{quotation}
 "\textit{Scrum} é um \textit{framework} Ágil, simples e leve, utilizado para a gestão do
-desenvolvimento de produtos complexos imersos em ambientes comple-
-xos. \textit{Scrum} é embasado no empirismo e utiliza uma abordagem iterativa
+desenvolvimento de produtos complexos imersos em ambientes complexos.
+\textit{Scrum} é embasado no empirismo e utiliza uma abordagem iterativa
 e incremental para entregar valor com frequência e, assim,
 reduzir os riscos do projeto". \cite{LivroScrumCasaDoCodigo}
 \end{quotation}
@@ -420,7 +420,7 @@ escopo da \textit{Sprint}. \cite{GuiaDoScrum} \cite{LivroScrumCasaDoCodigo}
 Segundo \cite{GuiaDoScrum} e \cite{LivroScrumCasaDoCodigo} o principais eventos dentro do \textit{Scrum}, são:
 
 \begin{itemize}
-  \item \textit{\textbf{Sprint:}} É um mini-projeto, que tem duração entre uma e quatro semanas
+  \item \textit{\textbf{Sprint:}} É um mini-projeto, que tem duração entre 1 e 4 semanas
   e é durante esse intervalo de tempo que o Time de desenvolvimento faz o incremento do produto.
   O objetivo maior da \textit{Sprint} é que ao seu final uma nova parte utilizável do software seja entregue.
 
@@ -429,7 +429,7 @@ Segundo \cite{GuiaDoScrum} e \cite{LivroScrumCasaDoCodigo} o principais eventos 
   e a equipe irá selecionar quais dessas atividades entram na \textit{Sprint}
   para gerar um novo incremento no \textit{software};
 
-  \item \textit{\textbf{Dayli Scrum:}} É uma reunião curta e realizada todos os dias pela equipe de desenvolvimento, geralmente ocorre sempre no mesmo horário e tem uma duração de aproximadamente quinze minutos.
+  \item \textit{\textbf{Dayli Scrum:}} É uma reunião curta e realizada todos os dias pela equipe de desenvolvimento, geralmente ocorre sempre no mesmo horário e tem uma duração de aproximadamente 15 minutos.
   Durante os \textit{Dayli Scrums} todos os membros da equipe se focam em responder três perguntas:
   \begin{itemize}
     \item O que eu fiz ontem ?;
@@ -525,14 +525,17 @@ Essas falhas colocam como cada vez mais prioritária a necessidade de se garantir
 Teste de \textit{software} pode ser definido como um processo de execução de um produto, para determinar se o mesmo atingiu suas necessidades e se seu funcionamento ocorreu de forma correta e segura. O maior objetivo do processo de testes é detectar falhas e previni-lás ainda durante o desenvolvimento, para evitar
 que essas falhas sejam descobertas por usuários e não causem danos e nem prejuízos. \cite{Pressman}
 
-Segundo \cite{Pressman} de testes de \textit{software} devem abordar todos os níveis do projeto e podem ser
+Segundo \cite{Pressman} testes de \textit{software} devem abordar todos os níveis do projeto e podem ser
 classificados como:
 
 \begin{itemize}
   \item \textbf{Testes de Unidade:} Focam em testar cada pequeno componente do sistema, garantindo sua funcionalidade e também garatem que cada pequeno componente consiga funcionar de forma isoloada;
-  \item \textbf{Teste de Integração:} Visa testar o fluxo do sistema como um tudo e garantir que todas
+
+  \item \textbf{Teste de Integração:} Visa testar o fluxo do sistema como um todo e garantir que todas
   as interações funcionem entre si;
+
   \item \textbf{Teste de Validação:} Visa testar se os requisitos estão funcionando da mesma forma no \textit{software} de como foram levantados na análise;
+
   \item \textbf{Teste de Sistema:} Foca em testar a combinação do \textit{software} com outros elementos de \textit{hardware}, banco de dados e usuários reais. Também visa garantir que o projeto atendeu a necessidade
   para o qual ele foi criado.
 \end{itemize}
@@ -555,7 +558,7 @@ a satisfação do cliente.
 
 \section{Test Driven Development (TDD)}
 
-O TDD (Test Driven Development ou Desenvolvimento Guiado por Testes) é a prática de desenvolvimento de \textit{software} onde os testes automatizados são criados antes de qualquer código real seja implementado, deixando a
+O TDD (\textit{Test Driven Development} ou Desenvolvimento Guiado por Testes) é a prática de desenvolvimento de \textit{software} onde os testes automatizados são criados antes de qualquer código real seja implementado, deixando a
 codificação real para um segundo momento, forçando o desenvolvedor a focar sempre na simplicidade, refatorando seu código sempre que possível e buscando deixar o código sempre enxuto. \cite{TDD:Aniche}
 
 A utilização dessa abordagem possibilita ao desenvolvedor tenha ao final do processo uma aplicação funcional, com uma estrutura bem feita e altamente testável. \cite{TDD:Aniche}
@@ -619,9 +622,14 @@ que prática o TDD e um desenvolvedor que não prática TDD.
   \end{center}
 \end{figure}
 
+Dessa forma é possível notar que a prática do TDD além de garantir um melhor código,
+criar uma base sólidas de testes de unidade ao \textit{software}
+também irá ajudar na prevenção de erros e quando erros surgirem, o desenvolvedor poderá
+corrigi-lo mais rapidamente, evitando que esses erros possas se propagar e prejudicar todo o projeto.
+
 \section{Behavior Driven Development (BDD)}
 
-O BDD (Behavior Driven Development ou Desenvolvimento Guiado por Comportamento)
+O BDD (\textit{Behavior Driven Development} ou Desenvolvimento Guiado por Comportamento)
 é uma prática de desenvolvimento de \textit{software} que tenta gerar uma maior integração
 entre equipes de negócio e desenvolvimento. \cite{BDD:CasaDoCodigo}
 
@@ -727,13 +735,13 @@ A linguagem foi criada no ano de 1995 no Japão Yukihiro "Matz" Matsumoto,
 é uma linguagem orientada a objeto interpretada, de tipagem forte e dinâmica.
 Foi criada baseada no que havia de melhor me outras
 linguagens como: \textit{Smalltalk}, \textit{Lisp} e \textit{Ada}.
-Tudo em Ruby é um objeto e sua sintaxe simples visa facilitar o desenvolvedor
+Tudo em \textit{Ruby} é objeto e sua sintaxe simples visa facilitar o desenvolvedor
 tanto na hora de escrever código como também na hora
 de ler código de outros desenvolvedores.
 
 É \textit{open-source} o que possibilita aos desenvolvedores abrirem e melhorem o
-código fonte sempre que julgarem necessário, o que possibilita uma melhoria
-constante na correção de erros e facilitando a melhoria e inclusão de novas
+código fonte sempre que julgarem necessário, o que possibilita uma
+constante na correção de erros, facilitando melhorias e inclusões de novas
 funcionalidades a linguagem. \cite{Ruby:Thomas}
 
 Na Figura \ref{figura_9} é possível ver um exemplo de código Ruby:
@@ -773,6 +781,7 @@ Para o desenvolvimento do estudo experimental foram utilizadas as seguintes tecn
   \item Linguagem \textit{Ruby};
   \item \textit{Framework} \textit{RSpec};
   \item \textit{Framework} \textit{Cubumber};
+  \item \textit{Framework Web} \textit{Sinatra};
   \item Editor de texto \textit{Sublime Text};
 \end{itemize}
 
@@ -785,8 +794,13 @@ O \textit{Cucumber} é um \textit{framework} para automatizar a criação de testes
 e validar o comportamento do \textit{software}, com ele é
 possível escrever especificações executáveis de do ponto de vista do usuário.
 
-O editor \textit{Sublime Text} foi escolhido por ser um editor simples, leve, além que de
-é flexível e permite a instalação de diversos \textit{plugins} para facilitar o seu uso.
+O editor \textit{Sublime Text} foi escolhido por ser um editor simples, leve
+e permite a instalação de diversos \textit{plugins} para diversas linaguagens,
+para facilitar o seu uso.
+
+E o \textit{Sinatra} é um \textit{micro-framework web} escrito em \textit{Ruby} que
+tem como grande vantagem ser leve e possibilitar um desenvolvimento flexível e rápido
+para aplicações \textit{web} de pequeno porte.
 
 \section{Estudo Experimental}
 
