@@ -70,7 +70,7 @@ a-pli-ca-do}
 \listoffigures
 
 % Lista de Tabelas (Retirar se não existir)
-% \listoftables
+\listoftables
 
 % Lista de Símbolos (Retirar se não existir)
 % \listofsymbols
@@ -803,6 +803,55 @@ tem como grande vantagem ser leve e possibilitar um desenvolvimento flexível e r
 para aplicações \textit{web} de pequeno porte.
 
 \section{Estudo Experimental}
+
+Nesta seção será descrito o procedimento da aplicação experimental para validar a utilização
+do BDD no processo de desenvolvimento.
+
+O estudo experimental proposto, será uma aplicação que irá realizar o cálculo do salário líquido,
+conforme Tabela \ref{tabela_1} do Imposto de Renda (IR) e Tabela \ref{tabela_2} referente ao
+Instituto Nacional do Seguro Social (INSS).
+
+\clearpage
+
+\begin{table}
+\centering
+\caption{Tabela do Cálculo do Imposto de Renda - 2015}
+\label{tabela_1}
+  \begin{tabular}{ccc}
+
+  \hline
+
+  Base de cálculo & Alíquota em \% & Parcela a deduzir em R\$ \\
+
+  \hline
+
+  Até 1.903,98             & -    & -       \\
+  De 1.903,99 até 2.826,65 & 7,5  & 142,80  \\
+  De 2.826,66 até 3.751,05 & 15,0 & 354,80  \\
+  De 3.751,06 até 4.664,68 & 22,5 & 636,13  \\
+  Acima de 4.664,68        & 27,5 & 869,36
+
+  \end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Tabela do Cálculo do INSS - 2015}
+\label{tabela_2}
+  \begin{tabular}{ccc}
+
+  \hline
+
+  Base de cálculo & Alíquota em \% \\
+
+  \hline
+
+  Até 1.399,12             & 8 \\
+  De 1.399,13 até 2.331,88 & 9 \\
+  De 2.331,89 até 4.663,75 & 11
+
+  \end{tabular}
+\end{table}
 
 \chapter{Resultados e Discussões}
 \chapter{Considerações Finais}
