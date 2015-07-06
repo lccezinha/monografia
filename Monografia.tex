@@ -811,9 +811,7 @@ O estudo experimental proposto, será uma aplicação que irá realizar o cálculo do
 conforme Tabela \ref{tabela_1} do Imposto de Renda (IR) e Tabela \ref{tabela_2} referente ao
 Instituto Nacional do Seguro Social (INSS).
 
-\clearpage
-
-\begin{table}
+\begin{table}[h]
 \centering
 \caption{Tabela do Cálculo do Imposto de Renda - 2015}
 \label{tabela_1}
@@ -834,7 +832,7 @@ Instituto Nacional do Seguro Social (INSS).
   \end{tabular}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
 \centering
 \caption{Tabela do Cálculo do INSS - 2015}
 \label{tabela_2}
@@ -853,8 +851,106 @@ Instituto Nacional do Seguro Social (INSS).
   \end{tabular}
 \end{table}
 
+O propósito da aplicação é que dado um valor de salário líquido, a aplicação
+deverá retornar a alíquota e o valor em reais referente ao IR e ao INSS do valor informado.
+
+\clearpage
+
+Na primeira etapa é necessário criar a estrutura inicial da aplicação \textit{web}
+conforme Figura \ref{figura_10}.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/estrutura-app.png}
+    \caption{Estrutura inicial da aplicação}
+    \label{figura_10}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Os principais itens dessa estrutura são:
+
+\begin{itemize}
+  \item \textit{\textbf{features:}} É o diretório onde estarão os testes de aceitação;
+  \item \textit{\textbf{features/step-definitions:}} É o diretório onde serão
+  escritos os passos para validação do teste de aceitação;
+  \item \textit{\textbf{features/support:}} É o diretório onde serão escritos códigos
+  que poderão ser utilizados de forma à auxiliar os testes de aceitação;
+  \item \textit{\textbf{lib:}} É o diretório onde está o código da aplicação;
+  \item \textit{\textbf{spec/lib:}} É o diretório responsável por armazenar os testes de unidade
+  dos códigos escritos dentro de \textit{lib};
+  \item \textit{\textbf{views:}} É o diretório onde as telas do projeto estarão
+  armazenadas;
+  \item \textit{\textbf{app.rb:}} É o arquivo que inicia a aplicação;
+\end{itemize}
+
+O passo seguinte é configurar os \textit{frameworks} de testes que serão utilizados,
+conforme Figura \ref{figura_11}
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/rubygems.png}
+    \caption{Configuração dos \textit{frameworks} de teste}
+    \label{figura_11}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Com a aplicação devidamente configura, é possível iniciar o desenvolvimento.
+
+O \textit{framework Cucumber}, que será utilizado para a criação das especificações
+possui um padrão de linguagem chamado \textit{Gherkin} que possui um vocabulário próprio
+e permite que as especificações sejam escritas na linguagem nativa da equipe ou desenvolvedor.
+
+O primeiro passo para o desenvolvimento é criar um primeiro teste de aceitação, para validar
+os cálculos que serão efetuados pela aplicação, conforme visto na Figura \ref{figura_12}:
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-1.png}
+    \caption{Criando primeiro teste de aceitação}
+    \label{figura_12}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+% Após criado o arquivo de especificação é possível executá-lo, com o comando \textit{bundle exec cucumber}
+% porém como nesse momento só existe o código da especificação, não será possível validar a aplicação e
+% ele apenas irá informar que a especificação não ainda não foi escrita, conforme a
+% Figura \textit{figura_13}.
+
+% \begin{figure}[hbt!]
+%   \begin{center}
+%     \epsfig{file=images/app-2.png}
+%     \caption{Executando primerio teste de aceitação}
+%     \label{figura_13}
+%     Autoria Própria
+%   \end{center}
+% \end{figure}
+
+% A saída do comando também irá sugerir que sejam copiados os passos do teste sugeridos e
+% crie um arquivo \textit{Ruby} no diretório \textit{features/step_definitions}, conforme
+% a Figura \textit{figura_14}
+
+% \begin{figure}[hbt!]
+%   \begin{center}
+%     \epsfig{file=images/app-3.png}
+%     \caption{Passos do teste de aceitação}
+%     \label{figura_14}
+%     Autoria Própria
+%   \end{center}
+% \end{figure}
+
+% Os arquivos contidos no diretório \textit{features/step_definitions} são os arquivos que farão
+% a conexão entre o arquivo de especificação e as classes \textit{Ruby} com o código real da aplicação.
+
+% É preciso criar um \textit{Ruby}
+% arquivo chamado
+
+
 \chapter{Resultados e Discussões}
 \chapter{Considerações Finais}
+
 
 %Referencias:
 \bibliographystyle{abnt-alf}
