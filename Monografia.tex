@@ -929,22 +929,56 @@ Figura \ref{figura_13}.
 \end{figure}
 
 A saída do comando também irá sugerir que sejam copiados os passos do teste sugeridos e
-crie um arquivo \textit{Ruby} no diretório \textit{features/stepdefinitions}, conforme
-a Figura \ref{figura_14}.
+crie-se um arquivo \textit{Ruby} no diretório \textit{features/stepdefinitions} contendo todos os
+passos da especificação, conforme a Figura \ref{figura_14}.
 
 \clearpage
 
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/app-3.png}
-    \caption{Passos do teste de aceitação}
+    \caption{Passos do teste de aceitação ainda pendentes}
     \label{figura_14}
     Autoria Própria
   \end{center}
 \end{figure}
 
-Os arquivos contidos no diretório \textit{features/stepdefinitions} são os arquivos que farão
+Todos os arquivos contidos no diretório \textit{features/stepdefinitions} são os arquivos que farão
 a conexão entre o arquivo de especificação e as classes \textit{Ruby} com o código real da aplicação.
+Esses arquivos entendem e conseguem receber dados dos arquivos de teste de aceitação e também conseguem
+se conectar com os arquivos de código da aplicação.
+
+Após copiar e colar em um arquivo \textit{Ruby} os passos sugeridos pelo \textit{Cucumber} para o teste,
+é preciso iniciar o desenvolvimento desses passos, utilizando o códigos reais da aplicação.
+Conforme Figura \ref{figura_15} os passos que antes eram pendentes agora irão possuir codigo que será
+utilizado para a validação.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-4.png}
+    \caption{Criando os testes de aceitação reais}
+    \label{figura_15}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+\clearpage
+
+Ao executar esses testes de aceitação eles devem falhar, pois ainda não foi feito criado código \textit{Ruby}
+na aplicação para que os testes passem. Na Figura \ref{figura_16} é possível observar a execução de todos os passos
+através do comando \textit{bundle exec cucumber} e verificar que todos os passos estão falhando. Dessa forma
+terminamos o primeiro passo no ciclo do BDD, onde criamos uma especificação que falha por não haver
+nenhum código de execução na aplicação, agora é possível iniciar o desenvolvimento e entrar na segunda
+parte do ciclo do BDD e iniciar a codificação utilizando TDD.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-5.png}
+    \caption{Executando a especificação}
+    \label{figura_16}
+    Autoria Própria
+  \end{center}
+\end{figure}
 
 
 \chapter{Resultados e Discussões}
