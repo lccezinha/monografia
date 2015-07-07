@@ -714,12 +714,16 @@ seguindo o BDD ocorrem da seguinte forma:
 \begin{itemize}
   \item Na primeira etapa do ciclo a equipe deve escrever um novo comportamento esperado
   pelo \textit{software} e ao executar essa especificação ela deve falhar;
+
   \item Na segunda etapa do ciclo a equipe entra no ciclo do TDD, escrevendo um teste de unidade
   que também deverá falhar;
+
   \item Na terceira etapa do ciclo deve-se codificar o mínimo necessário de código para que o teste feito
   na segunda etapa passe;
+
   \item Na quarta etapa o código escrito na terceira etapa deverá ser refatorado e após a refatoração
   é necessário certificar-se de que o teste de unidade escrito na etapa dois, continue passando;
+
   \item Na quinta e última etapa do ciclo, após o código ter sido codificado e refatorado é necessário
   executar novamente a especificação e verificar que o comportamento está sendo
   executado corretamente.
@@ -872,15 +876,21 @@ Os principais itens dessa estrutura são:
 
 \begin{itemize}
   \item \textit{\textbf{features:}} É o diretório onde estarão os testes de aceitação;
+
   \item \textit{\textbf{features/step-definitions:}} É o diretório onde serão
   escritos os passos para validação do teste de aceitação;
+
   \item \textit{\textbf{features/support:}} É o diretório onde serão escritos códigos
   que poderão ser utilizados de forma à auxiliar os testes de aceitação;
+
   \item \textit{\textbf{lib:}} É o diretório onde está o código da aplicação;
+
   \item \textit{\textbf{spec/lib:}} É o diretório responsável por armazenar os testes de unidade
   dos códigos escritos dentro de \textit{lib};
+
   \item \textit{\textbf{views:}} É o diretório onde as telas do projeto estarão
   armazenadas;
+
   \item \textit{\textbf{app.rb:}} É o arquivo que inicia a aplicação;
 \end{itemize}
 
@@ -896,7 +906,7 @@ conforme Figura \ref{figura_11}
   \end{center}
 \end{figure}
 
-Com a aplicação devidamente configura, é possível iniciar o desenvolvimento.
+Com a aplicação devidamente configurada, é possível iniciar o desenvolvimento.
 
 O \textit{framework Cucumber}, que será utilizado para a criação das especificações
 possui um padrão de linguagem chamado \textit{Gherkin} que possui um vocabulário próprio
@@ -916,7 +926,7 @@ os cálculos que serão efetuados pela aplicação, conforme visto na Figura \ref{fi
 
 Após criado o arquivo de especificação é possível executá-lo, com o comando \textit{bundle exec cucumber},
 porém como nesse momento só existe o código da especificação, não será possível validar a aplicação e
-ele apenas irá informar que a especificação não ainda não foi escrita, conforme a
+ele apenas irá informar que a especificação ainda não foi escrita, conforme a
 Figura \ref{figura_13}.
 
 \begin{figure}[hbt!]
@@ -929,7 +939,7 @@ Figura \ref{figura_13}.
 \end{figure}
 
 A saída do comando também irá sugerir que sejam copiados os passos do teste sugeridos e
-crie-se um arquivo \textit{Ruby} no diretório \textit{features/stepdefinitions} contendo todos os
+crie-se um arquivo \textit{Ruby} no diretório \textit{features/step-definitions} contendo todos os
 passos da especificação, conforme a Figura \ref{figura_14}.
 
 \clearpage
@@ -943,13 +953,17 @@ passos da especificação, conforme a Figura \ref{figura_14}.
   \end{center}
 \end{figure}
 
-Todos os arquivos contidos no diretório \textit{features/stepdefinitions} são os arquivos que farão
+Todos os arquivos contidos no diretório \textit{features/step-definitions} são os arquivos que farão
 a conexão entre o arquivo de especificação e as classes \textit{Ruby} com o código real da aplicação.
 Esses arquivos entendem e conseguem receber dados dos arquivos de teste de aceitação e também conseguem
 se conectar com os arquivos de código da aplicação.
 
+É esse ponto que o uso de BDD visa facilitar a integração entre as equipes, pois essas especificações
+podem ser escritas em conjunto pela equipe e ao final do processo para garantir o correto funcionamento
+do \textit{software} basta a equipe toda se focar na execução e validação dessas especificações.
+
 Após copiar e colar em um arquivo \textit{Ruby} os passos sugeridos pelo \textit{Cucumber} para o teste,
-é preciso iniciar o desenvolvimento desses passos, utilizando o códigos reais da aplicação.
+é preciso iniciar o desenvolvimento desses passos, utilizando os códigos reais da aplicação.
 Conforme Figura \ref{figura_15} os passos que antes eram pendentes agora irão possuir codigo que será
 utilizado para a validação.
 
@@ -964,12 +978,9 @@ utilizado para a validação.
 
 \clearpage
 
-Ao executar esses testes de aceitação eles devem falhar, pois ainda não foi feito criado código \textit{Ruby}
+Ao executar esses testes de aceitação eles devem falhar pois ainda não foi feito criado código \textit{Ruby}
 na aplicação para que os testes passem. Na Figura \ref{figura_16} é possível observar a execução de todos os passos
-através do comando \textit{bundle exec cucumber} e verificar que todos os passos estão falhando. Dessa forma
-terminamos o primeiro passo no ciclo do BDD, onde criamos uma especificação que falha por não haver
-nenhum código de execução na aplicação, agora é possível iniciar o desenvolvimento e entrar na segunda
-parte do ciclo do BDD e iniciar a codificação utilizando TDD.
+através do comando \textit{bundle exec cucumber} e verificar que todos os passos estão falhando.
 
 \begin{figure}[hbt!]
   \begin{center}
@@ -980,6 +991,112 @@ parte do ciclo do BDD e iniciar a codificação utilizando TDD.
   \end{center}
 \end{figure}
 
+Dessa forma é encerrada a primeira etapa no ciclo do BDD, onde foi criada uma especificação
+que falha por não haver nenhum código de execução na aplicação, agora é possível iniciar o desenvolvimento
+e entrar na segunda etapa do ciclo do BDD e iniciar a codificação utilizando TDD.
+
+Conforme visto na Figura \ref{figura_16} os testes de aceitação falham pois a classe \textit{SalaryCalculator} ainda não existe. Obedecendo o ciclo do TDD o primeiro passo é criar um teste unitário que falhe,
+essa é a fase do vermelho (\textit{red}) dentro do TDD.
+
+Na Figura \ref{figura_17} está sendo criado o primeiro teste unitário, esse teste deverá
+falhar pois ainda não há código dentro \textit{SalaryCalculator} apenas a sua definição.
+
+\clearpage
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-6.png}
+    \caption{Criando primeiro teste que irá falhar}
+    \label{figura_17}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Na Figura \ref{figura_18} está sendo executado o primeiro teste unitário para a classe \textit{SalaryCalculator}
+e é possível observar que ele está falhando.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-7.png}
+    \caption{Executando testes unitários para a class \textit{SalaryCalculator}}
+    \label{figura_18}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Seguindo na segunda etapa do TDD, conhecida como verde (\textit{green}) é preciso criar um código da forma mais
+simples possível, apenas para garantir que o teste passe de vermelho para verde.
+A codificação simplificada é vista na Figura \ref{figura_19} e a execução do teste retornando
+verde é vista na \ref{figura_20}.
+
+\clearpage
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-8.png}
+    \caption{Codificação mínima para a classe \textit{SalaryCalculator}}
+    \label{figura_19}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-9.png}
+    \caption{Executando testes unitários, agora todos passando}
+    \label{figura_20}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Nesse ponto a terceira etapa do ciclo do BDD foi cumprida, pois o código foi criado utilizando TDD
+e agora está no estado verde, ou seja, o código atual está funcionando, porém o ciclo não termina
+até a especificação também estar funcionando corretamente.
+
+O código atual feito na Figura \ref{figura_19} está simples o suficiente e está no estado verde.
+O próximo passo agora seria efetuar a refatoração (\textit{refactor}) para completar o ciclo do TDD,
+porém o código atual já é o suficiente, não havendo necessidade de refatoração e podendo seguir para o próximo teste.
+
+O próximo caso de teste unitário, serão os testes que dado um salário será preciso efetuar os cálculos
+referentes ao valores de IRRF, INSS e retornar o salário líquido final.
+
+Tomando como base a especificação escrita na Figura \ref{figura_12}, os testes unitários ficaram da seguinte forma,
+como visto na Figura \ref{figura_21}.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-11.png}
+    \caption{Criando teste unitários de acordo com especificação}
+    \label{figura_21}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Na execução dos testes, presentes na Figura \ref{figura_22} todos estão falhando, seguindo o princípio do TDD,
+que todos os testes devem falhar em primeiro momento.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-12.png}
+    \caption{Executando testes unitários com base na especificação}
+    \label{figura_22}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Na etapa seguinte é preciso realizar a codificação mínima do código para que todos os testes passem.
+
+% A especificação criada ainda falha pois não foi produzido todo o código necessário para validação
+% da mesma, conforme pode ser vista na Figura \ref{figura_21}.
+
+% \begin{figure}[hbt!]
+%   \begin{center}
+%     \epsfig{file=images/app-10.png}
+%     \caption{Executando especificação que ainda falha}
+%     \label{figura_21}
+%     Autoria Própria
+%   \end{center}
+% \end{figure}
 
 \chapter{Resultados e Discussões}
 \chapter{Considerações Finais}
