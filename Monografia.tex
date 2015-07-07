@@ -953,6 +953,8 @@ passos da especificação, conforme a Figura \ref{figura_14}.
   \end{center}
 \end{figure}
 
+\clearpage
+
 Todos os arquivos contidos no diretório \textit{features/step-definitions} são os arquivos que farão
 a conexão entre o arquivo de especificação e as classes \textit{Ruby} com o código real da aplicação.
 Esses arquivos entendem e conseguem receber dados dos arquivos de teste de aceitação e também conseguem
@@ -1006,7 +1008,7 @@ falhar pois ainda não há código dentro \textit{SalaryCalculator} apenas a sua de
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/app-6.png}
-    \caption{Criando primeiro teste que irá falhar}
+    \caption{Criando primeiro teste unitário que irá falhar}
     \label{figura_17}
     Autoria Própria
   \end{center}
@@ -1018,7 +1020,7 @@ e é possível observar que ele está falhando.
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/app-7.png}
-    \caption{Executando testes unitários para a class \textit{SalaryCalculator}}
+    \caption{Executando testes unitários para a classe \textit{SalaryCalculator}}
     \label{figura_18}
     Autoria Própria
   \end{center}
@@ -1043,7 +1045,7 @@ verde é vista na \ref{figura_20}.
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/app-9.png}
-    \caption{Executando testes unitários, agora todos passando}
+    \caption{Executando testes unitários, testes funcionando corretamente}
     \label{figura_20}
     Autoria Própria
   \end{center}
@@ -1092,7 +1094,7 @@ codificação é vista na Figura \ref{figura_23}.
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/app-13.png}
-    \caption{Criando código simples para que os testes passem}
+    \caption{Criando código mínimo para que os testes passem}
     \label{figura_23}
     Autoria Própria
   \end{center}
@@ -1106,16 +1108,18 @@ e como a codificação mínima foi feita todos os testes passam, como visto na Figu
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/app-14.png}
-    \caption{Executando novamente os testes unitários, agoras todos passam}
+    \caption{Executando novamente os testes unitários}
     \label{figura_24}
     Autoria Própria
   \end{center}
 \end{figure}
 
-Agora seguindo para a próxima etapa é preciso realizar refatoração dó código, já que o código
-inicial era apenas para sair do estado de vermelho e atingir o estado verde, agora é preciso
-entrar no processo de refatoração dentro do TDD e também validar se os testes unitários ainda
+Agora seguindo para a próxima etapa é preciso realizar refatoração do código, já que o código
+inicial era apenas para sair do estado de vermelho e atingir o estado verde. Nessa quarta etapa do
+processo de BDD é preciso entrar no processo de refatoração dentro do TDD e também validar se os testes unitários ainda
 passam com a nova implementação, a nova implementação é vista na Figura \ref{figura_25}.
+
+\clearpage
 
 \begin{figure}[hbt!]
   \begin{center}
@@ -1130,26 +1134,31 @@ Para validar o final do ciclo do TDD é preciso executar novamente os testes unit
 e verificar que todos ainda passam, ou seja, a nova implementação além de melhor continua garantindo o funcionamento
 do código, conforme visto na Figura \ref{figura_26}.
 
+\clearpage
+
 \begin{figure}[hbt!]
   \begin{center}
     \epsfig{file=images/app-14.png}
-    \caption{Executando novamente os testes unitários, todos continuam passando com a refatoração}
+    \caption{Executando novamente os testes unitários, código continua funcionando após a refatoração}
     \label{figura_26}
     Autoria Própria
   \end{center}
 \end{figure}
 
-% A especificação criada ainda falha pois não foi produzido todo o código necessário para validação
-% da mesma, conforme pode ser vista na Figura \ref{figura_21}.
+Com esses passos se encerra o ciclo do TDD e para finalizar o ciclo do BDD é preciso executar novamente a especificação
+escrita na Figura \ref{figura_12}. Na Figura \ref{figura_27} a execução da especificação mostra que o ciclo do BDD foi completado
+pois a especificação que antes era falha agora está executando corretamente, garantindo a funcionalidade da aplicação.
 
-% \begin{figure}[hbt!]
-%   \begin{center}
-%     \epsfig{file=images/app-10.png}
-%     \caption{Executando especificação que ainda falha}
-%     \label{figura_21}
-%     Autoria Própria
-%   \end{center}
-% \end{figure}
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-17.png}
+    \caption{Executando a especificação, código funcionando corretamente}
+    \label{figura_27}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+A execução de todos os testes e principalmente a da especificação sem erros, mostra que o ciclo do BDD foi realizado com sucesso.
 
 \chapter{Resultados e Discussões}
 \chapter{Considerações Finais}
