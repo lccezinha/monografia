@@ -1112,8 +1112,32 @@ e como a codificação mínima foi feita todos os testes passam, como visto na Figu
   \end{center}
 \end{figure}
 
-Agora seguindo para a próxima etapa é preciso executar a refatoração dó código e também validar
-se os testes unitários ainda passam.
+Agora seguindo para a próxima etapa é preciso realizar refatoração dó código, já que o código
+inicial era apenas para sair do estado de vermelho e atingir o estado verde, agora é preciso
+entrar no processo de refatoração dentro do TDD e também validar se os testes unitários ainda
+passam com a nova implementação, a nova implementação é vista na Figura \ref{figura_25}.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-15.png}
+    \caption{Reescrevendo o código da classe \textit{SalaryCalculator}}
+    \label{figura_25}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Para validar o final do ciclo do TDD é preciso executar novamente os testes unitários da Figura \ref{figura_21}
+e verificar que todos ainda passam, ou seja, a nova implementação além de melhor continua garantindo o funcionamento
+do código, conforme visto na Figura \ref{figura_26}.
+
+\begin{figure}[hbt!]
+  \begin{center}
+    \epsfig{file=images/app-14.png}
+    \caption{Executando novamente os testes unitários, todos continuam passando com a refatoração}
+    \label{figura_26}
+    Autoria Própria
+  \end{center}
+\end{figure}
 
 % A especificação criada ainda falha pois não foi produzido todo o código necessário para validação
 % da mesma, conforme pode ser vista na Figura \ref{figura_21}.
