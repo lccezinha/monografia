@@ -1162,6 +1162,41 @@ Com a realização do ciclo completa e a garantia que a funcionalidade está corret
 concluído com sucesso.
 
 \chapter{Resultados e Discussões}
+
+Esse capítulo visa discutir sobre os resultados obtidos após a implementação do estudo experimental com base
+no referencial teórico descrito ao longo do trabalho.
+
+\section{Funcionamento da aplicação}
+
+Para sair do cenário apenas de testes foi criada uma aplicação \textit{web} simples,
+utilizando o \textit{framework} \textit{Sinatra}, onde o usuário irá informar o seu salário bruto e a aplicação
+irá retornar os valores corretos referentes ao IRRF, INSS e salário líquido.
+
+A execução da aplicação é vista na Figura \ref{figura_28}.
+
+\begin{figure}[h!]
+  \begin{center}
+    \epsfig{file=images/app-16.png}
+    \caption{Executando a aplicação no browser}
+    \label{figura_28}
+    Autoria Própria
+  \end{center}
+\end{figure}
+
+Com a execução da aplicação \textit{web} funcionando corretamente,
+foi possível provar que os testes unitários e a especificação ajudaram a garantir
+o correto funcionamento do \textit{software}.
+
+\section{Documentação Viva}
+
+A utilização do \textit{Cucumber} para criação da especificação, além de servir para integrar equipes, pois a mesma
+pode ser escrita em português, também irá servir como uma documentação viva do \textit{software}.
+
+Documentação de \textit{software} é um problema pois muitas equipes por vezes não documentam, ou quando fazem,
+a documentação fica ultrapassada. A utilização de BDD aliado a ferramenta \textit{Cucumber} pode ajudar a solucionar
+os problemas relacionados a documentação, pois a especificação sempre será atualizada juntamente com os testes
+e o código da aplicação.
+
 \chapter{Considerações Finais}
 
 
