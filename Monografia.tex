@@ -224,7 +224,7 @@ Visando minimizar problemas do desenvolvimento de \textit{software} sem algum pl
 Segundo \cite{Fowler} citado por \cite{Passuelo} "Metologias impõem um processo disciplinado no desenvolvimento
 de \textit{software}, com objetivo  de torná-lo mais previsível e mais eficiente".
 
-Porém o problema de muitas metologias é a burocrácia. Esas metodologias são focadas em documentação e gerenciamento rígido do projeto, muitas vezes acabam sendo vistas como um grande atraso para o projeto, já que a grande maioria
+Porém o problema de muitas metologias é a burocrácia. Essas metodologias são focadas em documentação e gerenciamento rígido do projeto, muitas vezes acabam sendo vistas como um grande atraso para o projeto, já que a grande maioria
 do tempo do projeto será gasto levantado requisitos e documentando todas as ações do sistema, antes mesmo de ele ser
 codificado. \cite{Fowler}
 
@@ -360,7 +360,7 @@ A visão geral do processo de \textit{Sprint} pode ser vista na Figura \ref{figur
 
 \subsection{O time do Scrum}
 
-Segundo \cite{LivroScrumCasaDoCodigo} dentro do \textit{Scrum} existem três papéis definidos: o Time de desenvolvimento, \textit{Scrum Master}.
+Segundo \cite{LivroScrumCasaDoCodigo} dentro do \textit{Scrum} existem três papéis definidos: o Time de desenvolvimento, \textit{Scrum Master} e o \textit{Product Owner}.
 
 \begin{itemize}
   \item \textbf{Time de desenvolvimento:} Geralmente é uma equipe composta de 3 a 10 pessoas e são os
@@ -425,7 +425,7 @@ Segundo \cite{GuiaDoScrum} e \cite{LivroScrumCasaDoCodigo} o principais eventos 
   O objetivo maior da \textit{Sprint} é que ao seu final uma nova parte utilizável do software seja entregue.
 
   \item \textit{\textbf{Sprint Planning:}} É uma reunião com participação de todos os envolvidos
-  onde o \textit{Product Owner} mostra quais as atividides de maior prioridade naquele momento
+  onde o \textit{Product Owner} mostra quais as atividades de maior prioridade naquele momento
   e a equipe irá selecionar quais dessas atividades entram na \textit{Sprint}
   para gerar um novo incremento no \textit{software};
 
@@ -623,7 +623,7 @@ que prática o TDD e um desenvolvedor que não prática TDD.
 \end{figure}
 
 Dessa forma é possível notar que a prática do TDD além de garantir um melhor código,
-criar uma base sólidas de testes de unidade ao \textit{software}
+irá criar uma base sólida de testes de unidade ao \textit{software}
 também irá ajudar na prevenção de erros e quando erros surgirem, o desenvolvedor poderá
 corrigi-lo mais rapidamente, evitando que esses erros possas se propagar e prejudicar todo o projeto.
 
@@ -634,7 +634,7 @@ O BDD (\textit{Behavior Driven Development} ou Desenvolvimento Guiado por Compor
 entre equipes de negócio e desenvolvimento. \cite{BDD:CasaDoCodigo}
 
 Nessa prática as equipes irão se focar em descrever um comportamento esperado pelo
-\textit{software} para após isso desenvolvedor o código necessário que irá solucionar o cenário desse comportamento, dessa forma pode-se validar se de fato o código criado irá atender
+\textit{software} para após isso desenvolver o código necessário que irá solucionar o cenário desse comportamento, dessa forma pode-se validar se de fato o código criado irá atender
 a necessidade de negócio e se comportar de modo acertivo. \cite{BDD:CasaDoCodigo}
 
 O BDD pode ser dito como um evolução sobre o TDD, visto que o TDD foca na construção do código, BDD
@@ -724,7 +724,7 @@ seguindo o BDD ocorrem da seguinte forma:
   \item Na quarta etapa o código escrito na terceira etapa deverá ser refatorado e após a refatoração
   é necessário certificar-se de que o teste de unidade escrito na etapa dois, continue passando;
 
-  \item Na quinta e última etapa do ciclo, após o código ter sido codificado e refatorado é necessário
+  \item Na quinta e última etapa do ciclo, após a codificação e refatoração é necessário
   executar novamente a especificação e verificar que o comportamento está sendo
   executado corretamente.
 \end{itemize}
@@ -796,14 +796,14 @@ O \textit{RSpec} é um \textit{framework} para criação de testes unitários que se
 
 O \textit{Cucumber} é um \textit{framework} para automatizar a criação de testes de aceitação
 e validar o comportamento do \textit{software}, com ele é
-possível escrever especificações executáveis de do ponto de vista do usuário.
+possível escrever especificações executáveis do ponto de vista do usuário.
 
 O editor \textit{Sublime Text} foi escolhido por ser um editor simples, leve
 e permite a instalação de diversos \textit{plugins} para diversas linaguagens,
 para facilitar o seu uso.
 
 E o \textit{Sinatra} é um \textit{micro-framework web} escrito em \textit{Ruby} que
-tem como grande vantagem ser leve e possibilitar um desenvolvimento flexível e rápido
+tem como grande vantagem ser leve, possibilitar um desenvolvimento flexível e rápido
 para aplicações \textit{web} de pequeno porte.
 
 \section{Estudo Experimental}
@@ -811,9 +811,9 @@ para aplicações \textit{web} de pequeno porte.
 Nesta seção será descrito o procedimento da aplicação experimental para validar a utilização
 do BDD no processo de desenvolvimento.
 
-O estudo experimental proposto, será uma aplicação que irá realizar o cálculo do salário líquido,
-conforme Tabela \ref{tabela_1} do Imposto de Renda (IR) e Tabela \ref{tabela_2} referente ao
-Instituto Nacional do Seguro Social (INSS).
+O estudo experimental proposto, será uma aplicação que dado o valor do salário bruto deverá retornar
+ao usuário o valor de seu salário líquido e também retornar os valores do IRRF e INSS,
+conforme Tabela \ref{tabela_1} do Imposto de Renda (IR) e Tabela \ref{tabela_2} referente ao Instituto Nacional do Seguro Social (INSS).
 
 \begin{table}[h]
 \centering
@@ -854,9 +854,6 @@ Instituto Nacional do Seguro Social (INSS).
 
   \end{tabular}
 \end{table}
-
-O propósito da aplicação é que dado um valor de salário líquido, a aplicação
-deverá retornar a alíquota e o valor em reais referente ao IR e ao INSS do valor informado.
 
 \clearpage
 
@@ -915,9 +912,7 @@ e permite que as especificações sejam escritas na linguagem nativa da equipe ou 
 O primeiro passo para o desenvolvimento é criar um primeiro teste de aceitação, para validar
 os cálculos que serão efetuados pela aplicação, conforme visto na Figura \ref{figura_12}:
 
-\clearpage
-
-\begin{figure}[hbt!]
+\begin{figure}[h!]
   \begin{center}
     \epsfig{file=images/app-1.png}
     \caption{Criando primeiro teste de aceitação}
@@ -944,7 +939,9 @@ A saída do comando também irá sugerir que sejam copiados os passos do teste suge
 crie-se um arquivo \textit{Ruby} no diretório \textit{features/step-definitions} contendo todos os
 passos da especificação, conforme a Figura \ref{figura_14}.
 
-\begin{figure}[hbt!]
+\clearpage
+
+\begin{figure}[t!]
   \begin{center}
     \epsfig{file=images/app-3.png}
     \caption{Passos do teste de aceitação ainda pendentes}
@@ -952,8 +949,6 @@ passos da especificação, conforme a Figura \ref{figura_14}.
     Autoria Própria
   \end{center}
 \end{figure}
-
-\clearpage
 
 Todos os arquivos contidos no diretório \textit{features/step-definitions} são os arquivos que farão
 a conexão entre o arquivo de especificação e as classes \textit{Ruby} com o código real da aplicação.
@@ -969,7 +964,9 @@ Após copiar e colar em um arquivo \textit{Ruby} os passos sugeridos pelo \textit
 Conforme Figura \ref{figura_15} os passos que antes eram pendentes agora irão possuir codigo que será
 utilizado para a validação.
 
-\begin{figure}[hbt!]
+\clearpage
+
+\begin{figure}[t!]
   \begin{center}
     \epsfig{file=images/app-4.png}
     \caption{Criando os testes de aceitação reais}
@@ -978,13 +975,14 @@ utilizado para a validação.
   \end{center}
 \end{figure}
 
-\clearpage
 
 Ao executar esses testes de aceitação eles devem falhar pois ainda não foi feito criado código \textit{Ruby}
 na aplicação para que os testes passem. Na Figura \ref{figura_16} é possível observar a execução de todos os passos
 através do comando \textit{bundle exec cucumber} e verificar que todos os passos estão falhando.
 
-\begin{figure}[hbt!]
+\clearpage
+
+\begin{figure}[h!]
   \begin{center}
     \epsfig{file=images/app-5.png}
     \caption{Executando a especificação}
@@ -1065,7 +1063,9 @@ referentes ao valores de IRRF, INSS e retornar o salário líquido final.
 Tomando como base a especificação escrita na Figura \ref{figura_12}, os testes unitários ficaram da seguinte forma,
 como visto na Figura \ref{figura_21}.
 
-\begin{figure}[hbt!]
+\clearpage
+
+\begin{figure}[h!]
   \begin{center}
     \epsfig{file=images/app-11.png}
     \caption{Criando teste unitários de acordo com especificação}
@@ -1073,8 +1073,6 @@ como visto na Figura \ref{figura_21}.
     Autoria Própria
   \end{center}
 \end{figure}
-
-\clearpage
 
 Na execução dos testes, presentes na Figura \ref{figura_22}, todos estão falhando, seguindo o princípio do TDD
 que todos os testes devem falhar em primeiro momento.
@@ -1091,7 +1089,9 @@ que todos os testes devem falhar em primeiro momento.
 Na etapa seguinte é preciso realizar a codificação mínima do código para que todos os testes passem. A
 codificação é vista na Figura \ref{figura_23}.
 
-\begin{figure}[hbt!]
+\clearpage
+
+\begin{figure}[h!]
   \begin{center}
     \epsfig{file=images/app-13.png}
     \caption{Criando código mínimo para que os testes passem}
@@ -1099,8 +1099,6 @@ codificação é vista na Figura \ref{figura_23}.
     Autoria Própria
   \end{center}
 \end{figure}
-
-\clearpage
 
 No próximo passo é preciso executar novamente os testes unitários referentes na Figura \ref{figura_21}
 e como a codificação mínima foi feita todos os testes passam, como visto na Figura \ref{figura_24}.
@@ -1119,9 +1117,7 @@ inicial era apenas para sair do estado de vermelho e atingir o estado verde. Nes
 processo de BDD é preciso entrar no processo de refatoração dentro do TDD e também validar se os testes unitários ainda
 passam com a nova implementação, a nova implementação é vista na Figura \ref{figura_25}.
 
-\clearpage
-
-\begin{figure}[hbt!]
+\begin{figure}[h!]
   \begin{center}
     \epsfig{file=images/app-15.png}
     \caption{Reescrevendo o código da classe \textit{SalaryCalculator}}
@@ -1225,8 +1221,9 @@ uma melhor integração entre equipes de diferentes áreas.
 
 \section{Trabalho Futuros}
 
-A continuação desse trabalho sugere um estudo melhor elaborado sobre como introduzir essas práticas
-em equipes que não tem hábito de utilizar testes e nem mesmo metodologias ágeis.
+A continuação desse trabalho sugere um estudo melhor elaborado sobre como introduzir práticas
+de testes unitários e de aceitação em equipes que não tem hábito de utilizar
+testes e nem mesmo metodologias ágeis.
 
 Além disso, uma pesquisa de levantamento de dados sobre como equipes ágeis fazem o uso dessas técnicas
 e qual a real vantagem essas equipes observam nessa abordagem.
