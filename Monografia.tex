@@ -124,22 +124,22 @@ se propõe.
 Entre as técnicas que tentam melhorar a acertividade e a qualidade do \textit{software} entregue,
 surge o TDD. O TDD (\textit{Test Driven Development} ou Desenvolvimento Guiado por Testes) visa minimizar
 os problemas do desenvolvimento e perca de tempo com \textit{debug}, adotando a técnica de criar testes
-antes de criar código. \cite{TDD:Aniche}
+antes de criar código \cite{TDD:Aniche}.
 
 Com essa troca de hábito o desenvolvedor irá primeiro criar um código que irá falhar,
 após isso irá criar um código o mais simples possível apenas para que o teste antes falho, funcione.
 Na última etapa o desenvolver irá codificar a melhor solução para resolver aquele teste,
 sempre focando na simplicidade. Ao final desse processo, já é possível ter um código simples, que solucione o problema
-testado e feito da melhor maneira possível. \cite{TDD:Aniche}
+testado e feito da melhor maneira possível \cite{TDD:Aniche}.
 
 O TDD foca no código e nas suas melhores práticas, porém para validar se a funcionalidade entregue
 realmente cumpre seu papel é preciso uma outra abordagem. O BDD surge então como um complemento ao TDD,
 onde ao invés de focar no código, irá focar no comportamento e tentará validar se o código entregue
-consegue garantir que o comportamento esperado pelo \textit{software} esteja correto. \cite{BDD:DanNorth}
+consegue garantir que o comportamento esperado pelo \textit{software} esteja correto \cite{BDD:DanNorth}.
 
 Além disso o BDD permite uma forma de integrar equipes de negócio e desenvolvimento, fazendo com que as duas
 falem a mesma linguagem e tenham um objetivo único, entregar \textit{software} com qualidade e que atenda
-os requisitos esperados pelo cliente. \cite{BDD:Sanchez} \cite{BDD:CasaDoCodigo}
+os requisitos esperados pelo cliente \cite{BDD:Sanchez} \cite{BDD:CasaDoCodigo}.
 
 Esse trabalho tem como foco conceitualizar sobre o uso das técnicas de TDD e BDD
 no desenvolvimento ágil de \textit{software} e através de um estudo experimental avaliar os
@@ -179,7 +179,7 @@ Porém para equipes ágeis que utilizam \textit{Scrum} apenas código entregue com 
 é preciso um modo para validar se o código que foi escrito, realmente irá atender a necessidade de
 negócio para o qual ele foi proposto. Com a utilização do BDD é possível integrar equipes de áreas
 diferentes para escrever especificações de \textit{software} executáveis, através das \textit{User Stories}
-do \textit{Scrum} e assim conseguir validar a funcionalidade entregue. \cite{BDD:CasaDoCodigo}
+do \textit{Scrum} e assim conseguir validar a funcionalidade entregue \cite{BDD:CasaDoCodigo}.
 
 Dessa forma, o uso de TDD e BDD no processo de desenvolvimento de \textit{software}, pode ser
 demonstrado de forma simples em aplicações \textit{Ruby}, que além de agilizar o desenvolvimento
@@ -212,10 +212,12 @@ que consiga organizar e gerenciar o projeto da melhor forma.
 
 Além desses fatores, existem outros que devem ser seguidos, como boas práticas de desenvolvimento de \textit{software}, padrões de desenvolvimento pela equipe para que todos possam trabalhar da melhor forma em conjunto.
 Entre os pontos importantes dentro do processo, existe o teste de \textit{software}, que deve ser feito
-para garantir que o que foi codificado está funcionando e também irá suprir a necessidade do cliente. \cite{Pressman} \cite{Beck}
+para garantir que o que foi codificado está funcionando e também irá suprir a necessidade do cliente
+\cite{Pressman} \cite{Beck}.
 
 Testar \textit{software} de maneira manual, abrindo todas as telas do projeto e clicando componente por componente é uma tarefa complicada, demorada e fica inviável a medida que projeto cresce. Além do fato que uma
-nova linha de código adicionada no projeto pode fazer com que todo o \textit{software} pare de funcionar. \cite{TDD:Aniche}
+nova linha de código adicionada no projeto pode fazer com que todo o \textit{software} pare de funcionar
+\cite{TDD:Aniche}.
 
 Para tentar sanar esses problemas e viabilizar que o \textit{software} ainda seja testado é preciso mudar a
 abordagem para uma abordagem que facilite a forma como o desenvolvedor irá testar seu código, duas dessas
@@ -230,7 +232,7 @@ de \textit{software}, com objetivo  de torná-lo mais previsível e mais eficiente
 
 Porém o problema de muitas metologias é a burocrácia. Essas metodologias são focadas em documentação e gerenciamento rígido do projeto, muitas vezes acabam sendo vistas como um grande atraso para o projeto, já que a grande maioria
 do tempo do projeto será gasto levantado requisitos e documentando todas as ações do sistema, antes mesmo de ele ser
-codificado. \cite{Fowler}
+codificado \cite{Fowler}.
 
 Então nos anos noventa, surge uma reação a essas metodologias mais rígidas, são as chamadas metodologias ágeis
 no processo de desenvolvimento de \textit{software}.
@@ -245,7 +247,7 @@ dentro do processo de desenvolvimento \cite{Beck}. O manifesto Ágil possui valor
   \item \textbf{Colaboração com cliente} mais que negócios e contratos;
   \item \textbf{Responder a mudança} mais que seguir um plano;
 
-  Ou seja, mesmo havendo valor nos itens a direita, valorizamos mais os itens a esquerda. \cite{ManifestoAgil}
+  Ou seja, mesmo havendo valor nos itens a direita, valorizamos mais os itens a esquerda \cite{ManifestoAgil}.
 \end{itemize}
 
 Além dos valores, o Manifesto Ágil se baseia em alguns princípios:
@@ -283,14 +285,14 @@ A \textit{Extreme Programming} mais conhecida com XP é uma metodologia de
 desenvolvimento que tem como finalidade entregar \textit{software} de qualidade e com as
 necessidades que o cliente realmente precisa.
 
-É uma metodologia voltada para pequenos e médios times de desenvolvimento que trabalham em projetos orientados a objetos e que seus requisitos podem sofrer constantes mudanças. \cite{Kuhn}
+É uma metodologia voltada para pequenos e médios times de desenvolvimento que trabalham em projetos orientados a objetos e que seus requisitos podem sofrer constantes mudanças \cite{Kuhn}.
 
 A satisfação do cliente é o que faz a metodologia ser bem sucedida. O XP
 busca o máximo desempenho da equipe mantendo um ritmo saudável de trabalho
 onde horas extra só são realizadas se forem agregar algo de valor ao produto final.
 
 O cliente obterá seu produto em pequenos lançamentos, podendo utilizá-lo,
-aprender com o mesmo e avaliar se o que foi desenvolvido era o desejado. \cite{DesenvolvimentoAgil:XP}
+aprender com o mesmo e avaliar se o que foi desenvolvido era o desejado \cite{DesenvolvimentoAgil:XP}.
 
 \cite{DesenvolvimentoAgil:XP} menciona os valores seguidos pelo XP:
 
@@ -339,7 +341,7 @@ dos valores e princípios, em 1990 surge o \textit{Scrum} que segue a seguinte de
 desenvolvimento de produtos complexos imersos em ambientes complexos.
 \textit{Scrum} é embasado no empirismo e utiliza uma abordagem iterativa
 e incremental para entregar valor com frequência e, assim,
-reduzir os riscos do projeto". \cite{LivroScrumCasaDoCodigo}
+reduzir os riscos do projeto" \cite{LivroScrumCasaDoCodigo}.
 \end{quotation}
 
 Embora o \textit{Scrum} vise ser menos burocrático que outras metologias, ele trás consigo
@@ -349,7 +351,7 @@ um processo que pode ser adaptado para cada projeto e cada equipe.
 
 Em sua forma mais básica o \textit{Scrum} é composto por um time, seus artefatos e seus eventos.
 O processo de desenvolvimento é baseado em \textit{Sprints}, onde o time irá interagir e trabalhar
-no projeto. \cite{DesenvolvimentoAgil:Scrum} \cite{LivroScrumCasaDoCodigo}
+no projeto \cite{DesenvolvimentoAgil:Scrum} \cite{LivroScrumCasaDoCodigo}.
 
 A visão geral do processo de \textit{Sprint} pode ser vista na Figura \ref{figura_1} abaixo:
 
@@ -383,8 +385,8 @@ Embora existam essas três separações, toda equipe é igualmente responsável
 e responsabilizada pelo resultados obtidos, isso faz com que todos se comprometam com o projeto inteiramente.
 
 Todos os membros juntos, formam o chamado Time do \textit{Scrum}, todos visam trabalhar juntos de forma colaborativa,
-para que como equipe todos consigam alcançar um único objetivo coletivo.
-\cite{LivroScrumCasaDoCodigo} \cite{GuiaDoScrum}
+para que como equipe todos consigam alcançar um único objetivo coletivo
+\cite{LivroScrumCasaDoCodigo} \cite{GuiaDoScrum}.
 
 \subsection{Artefatos do Scrum}
 
@@ -419,7 +421,7 @@ Conforme \cite{DesenvolvimentoAgil:Scrum} e \cite{DesenvolvimentoAgil:Scrum} os 
 Eventos do \textit{Scrum}, são na verdade o próprio ciclo de desenvolvimento, denominado \textit{Sprint}.
 Durante o período da \textit{Sprint} a equipe faz um série de cerimônias com objetivo de atualizar todos
 os membros sobre o andamento do trabalho e também ajuda a detectar algum possível impedimento para o
-escopo da \textit{Sprint}. \cite{GuiaDoScrum} \cite{LivroScrumCasaDoCodigo}
+escopo da \textit{Sprint} \cite{GuiaDoScrum} \cite{LivroScrumCasaDoCodigo}.
 
 Segundo \cite{GuiaDoScrum} e \cite{LivroScrumCasaDoCodigo} o principais eventos dentro do \textit{Scrum}, são:
 
@@ -514,7 +516,8 @@ como carros e aviões também estão cada vez mais dependentes de tecnologia e \tex
 
 O lado negativo de todo esse avanço, é que nos torna refens da tecnologia e uma falha gerada por algum desses dispositivos pode ser catastrófica e trazer grandes prejuízos financeiros.
 
-Ao longo dos anos a indústria de \textit{software} acumula algumas grandes falhas, citadas por \cite{FalhasDeSoftware:PedroCosta} e \cite{FalhasDeSoftware:ProfissionaisTI} :
+Ao longo dos anos a indústria de \textit{software} acumula algumas grandes falhas, citadas por
+\cite{FalhasDeSoftware:PedroCosta} e \cite{FalhasDeSoftware:ProfissionaisTI} :
 
 \begin{itemize}
   \item \textbf{Apagão nos EUA:} Um incidente causado por uma falha no sistema de alarmes deixou mais de 50 milhões de pessoas sem luz e causou 11 mortes;
@@ -527,7 +530,7 @@ Ao longo dos anos a indústria de \textit{software} acumula algumas grandes falha
 Essas falhas colocam como cada vez mais prioritária a necessidade de se garantir a qualidade e funcionamento do \textit{softwares} através de testes bem feitos, melhor elaborados e mais precisos.
 
 Teste de \textit{software} pode ser definido como um processo de execução de um produto, para determinar se o mesmo atingiu suas necessidades e se seu funcionamento ocorreu de forma correta e segura. O maior objetivo do processo de testes é detectar falhas e previni-lás ainda durante o desenvolvimento, para evitar
-que essas falhas sejam descobertas por usuários e não causem danos e nem prejuízos. \cite{Pressman}
+que essas falhas sejam descobertas por usuários e não causem danos e nem prejuízos \cite{Pressman}.
 
 Segundo \cite{Pressman} testes de \textit{software} devem abordar todos os níveis do projeto e podem ser
 classificados como:
@@ -563,9 +566,9 @@ a satisfação do cliente.
 \section{Test Driven Development (TDD)}
 
 O TDD (\textit{Test Driven Development} ou Desenvolvimento Guiado por Testes) é a prática de desenvolvimento de \textit{software} onde os testes automatizados são criados antes de qualquer código real seja implementado, deixando a
-codificação real para um segundo momento, forçando o desenvolvedor a focar sempre na simplicidade, refatorando seu código sempre que possível e buscando deixar o código sempre enxuto. \cite{TDD:Aniche}
+codificação real para um segundo momento, forçando o desenvolvedor a focar sempre na simplicidade, refatorando seu código sempre que possível e buscando deixar o código sempre enxuto \cite{TDD:Aniche}.
 
-A utilização dessa abordagem possibilita ao desenvolvedor tenha ao final do processo uma aplicação funcional, com uma estrutura bem feita e altamente testável. \cite{TDD:Aniche}
+A utilização dessa abordagem possibilita ao desenvolvedor tenha ao final do processo uma aplicação funcional, com uma estrutura bem feita e altamente testável \cite{TDD:Aniche}.
 
 \cite{Beck} enfatiza duas regras principais que devem ser seguidas quando se utiliza TDD:
 
@@ -635,25 +638,26 @@ corrigi-lo mais rapidamente, evitando que esses erros possas se propagar e preju
 
 O BDD (\textit{Behavior Driven Development} ou Desenvolvimento Guiado por Comportamento)
 é uma prática de desenvolvimento de \textit{software} que tenta gerar uma maior integração
-entre equipes de negócio e desenvolvimento. \cite{BDD:CasaDoCodigo}
+entre equipes de negócio e desenvolvimento \cite{BDD:CasaDoCodigo}.
 
 Nessa prática as equipes irão se focar em descrever um comportamento esperado pelo
 \textit{software} para após isso desenvolver o código necessário que irá solucionar o cenário desse comportamento, dessa forma pode-se validar se de fato o código criado irá atender
-a necessidade de negócio e se comportar de modo acertivo. \cite{BDD:CasaDoCodigo}
+a necessidade de negócio e se comportar de modo acertivo \cite{BDD:CasaDoCodigo}.
 
 O BDD pode ser dito como um evolução sobre o TDD, visto que o TDD foca na construção do código, BDD
 se preocupa em saber se o código criado irá se comporta de forma esperada e se
 consegue entregar a implementação da funcionalidade de forma esperada.
 
 O BDD fornece uma maneira com que equipes de áreas diferentes consigam trabalhar e
-escrever os cenários de teste juntas, já que a prática utiliza uma Linguagem Ubíqua na descrição dos seus cenários. \cite{BDD:CasaDoCodigo} \cite{BDD:Soares}
+escrever os cenários de teste juntas, já que a prática utiliza uma Linguagem Ubíqua na descrição dos seus cenários
+\cite{BDD:CasaDoCodigo} \cite{BDD:Soares}.
 
 O surgimento do BDD começou quando Dan North sentiu dificuldades de ensinar TDD para seus alunos
 por conta de sua nomeclatura e da utilização da palavra teste.
 Seus alunos sentiam certa dificuldade em saber por onde começar a especificação.
 Dan North então se focou em escrever o primeiro \textit{framework} para de utilizar
 BDD, surgiu então o \textit{JBehave}. Essa nova ferramenta tinha como foco tirar a referência da palavra teste
-e substituir por um vocabulário onde o foco fosse o comportamento. \cite{BDD:CasaDoCodigo} \cite{BDD:DanNorth}
+e substituir por um vocabulário onde o foco fosse o comportamento \cite{BDD:CasaDoCodigo} \cite{BDD:DanNorth}.
 
 \cite{BDD:Sanchez} cita as principais alterações feitas por Dan North, na tentantiva de remover o conceito de teste e focar na descrição do comportamento:
 
@@ -677,7 +681,7 @@ Além dessas, também foram introduzidas novas formas de criar cenários e validar 
 Uma especificação de comportamento no BDD é descrita de forma muito similar a uma \textit{User Story} do
 \textit{Scrum} e por isso é uma prática dentro de times \textit{Scrum} a utilização do BDD.
 Outro ponto importante da utilização do BDD no processo de desenvolvimento é que as especificações
-ao longo do tempo, acabam se tornando uma documentação viva do sistema. \cite{BDD:Sanchez}
+ao longo do tempo, acabam se tornando uma documentação viva do sistema \cite{BDD:Sanchez}.
 
 De forma simples, uma especificação é composta da seguinte maneira:
 
@@ -699,7 +703,7 @@ A abordagem de desenvolvimento utilizando BDD propõe que o \textit{software} sej
 especificando as várias camadas do comportamento com testes automatizados seguindo uma abordagem
 chamada de \textit{outside-in development}, ou seja, deve-se começar com a especificação de um comportamento
 de uma funcionalidade, após isso codificar as classes e métodos necessárias para satisfazer
-esse comportamento. \cite{BDD:CasaDoCodigo}
+esse comportamento \cite{BDD:CasaDoCodigo}.
 
 Na Figura \ref{figura_8} visa ilustrar a forma de desenvolvimento proposta pelo BDD:
 
@@ -750,7 +754,7 @@ de ler código de outros desenvolvedores.
 É \textit{open-source} o que possibilita aos desenvolvedores abrirem e melhorem o
 código fonte sempre que julgarem necessário, o que possibilita uma
 constante na correção de erros, facilitando melhorias e inclusões de novas
-funcionalidades a linguagem. \cite{Ruby:Thomas}
+funcionalidades a linguagem \cite{Ruby:Thomas}.
 
 Na Figura \ref{figura_9} é possível ver um exemplo de código Ruby:
 
